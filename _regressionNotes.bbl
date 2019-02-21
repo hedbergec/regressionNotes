@@ -1,0 +1,239 @@
+\begin{thebibliography}{39}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Aberson(2011)]{aberson2011applied}
+Christopher~L. Aberson.
+\newblock \emph{Applied power analysis for the behavioral sciences}.
+\newblock Routledge, 2011.
+
+\bibitem[Agresti and Finlay()]{agresti}
+Alan Agresti and Barbara Finlay.
+\newblock \emph{Statistical Methods for the Social Sciences}.
+\newblock Pearson.
+
+\bibitem[Austin(2011)]{austin2011tutorial}
+Peter~C. Austin.
+\newblock A tutorial and case study in propensity score analysis: An
+  application to estimating the effect of in-hospital smoking cessation
+  counseling on mortality.
+\newblock \emph{Multivariate behavioral research}, 46\penalty0 (1):\penalty0
+  119--151, 2011.
+
+\bibitem[Bloom()]{rd}
+Howard~S. Bloom.
+\newblock Modern regression discontinuity analysis.
+\newblock \emph{Journal of Research on Educational Effectiveness}.
+
+\bibitem[Caliendo and Kopeinig(2008)]{caliendo2008some}
+Marco Caliendo and Sabine Kopeinig.
+\newblock Some practical guidance for the implementation of propensity score
+  matching.
+\newblock \emph{Journal of economic surveys}, 22\penalty0 (1):\penalty0 31--72,
+  2008.
+
+\bibitem[Cameron(2005)]{cameron2005microeconometrics}
+A.~Colin Cameron.
+\newblock \emph{Microeconometrics: methods and applications}.
+\newblock Cambridge university press, 2005.
+
+\bibitem[Cohen(1988)]{cohen1988statistical}
+Jack Cohen.
+\newblock \emph{Statistical power analysis for the behavioral sciencies}.
+\newblock Routledge, 1988.
+
+\bibitem[Connor(1987)]{connor1987sample}
+Robert~J Connor.
+\newblock Sample size for testing differences in proportions for the
+  paired-sample design.
+\newblock \emph{Biometrics}, pages 207--211, 1987.
+
+\bibitem[Eliason(1993)]{eliason1993maximum}
+Scott~R Eliason.
+\newblock \emph{Maximum likelihood estimation: Logic and practice}.
+\newblock Number~96. Sage, 1993.
+
+\bibitem[Faul et~al.(2009)Faul, Erdfelder, Buchner, and
+  Lang]{faul2009statistical}
+Franz Faul, Edgar Erdfelder, Axel Buchner, and Albert-Georg Lang.
+\newblock Statistical power analyses using g* power 3.1: Tests for correlation
+  and regression analyses.
+\newblock \emph{Behavior research methods}, 41\penalty0 (4):\penalty0
+  1149--1160, 2009.
+
+\bibitem[Fisher and Bennett(1973)]{fisher1973statistical}
+Ronald~Aylmer Fisher and J~Henry Bennett.
+\newblock \emph{Statistical methods, experimental design, and scient ific
+  inference}.
+\newblock Oxford University Press, 1973.
+
+\bibitem[Fox()]{fox}
+John Fox.
+\newblock \emph{Applied Regression Analysis and Generalized Linear Models}.
+\newblock Sage.
+
+\bibitem[Freedman(2009)]{freedman2009statistical}
+David Freedman.
+\newblock \emph{Statistical models: theory and practice}.
+\newblock Cambridge University Press, 2009.
+
+\bibitem[Freedman and Berk(2008)]{freedman2008weighting}
+David~A. Freedman and Richard~A. Berk.
+\newblock Weighting regressions by propensity scores.
+\newblock \emph{Evaluation Review}, 32\penalty0 (4):\penalty0 392--409, 2008.
+
+\bibitem[Gill(2006)]{gill2006essential}
+Jeff Gill.
+\newblock \emph{Essential mathematics for political and social research}.
+\newblock Cambridge University Press, 2006.
+
+\bibitem[Goldstein et~al.(2002)Goldstein, Browne, and
+  Rasbash]{goldstein2002partitioning}
+Harvey Goldstein, William Browne, and Jon Rasbash.
+\newblock Partitioning variation in multilevel models.
+\newblock \emph{Understanding Statistics: Statistical Issues in Psychology,
+  Education, and the Social Sciences}, 1\penalty0 (4):\penalty0 223--231, 2002.
+
+\bibitem[Griffiths et~al.(1993)Griffiths, Hill, and Judge]{william1993learning}
+William~E. Griffiths, R.~Carter Hill, and George~G. Judge.
+\newblock Learning and practicing econometrics, 1993.
+
+\bibitem[Hill et~al.()Hill, Griffiths, and Lim]{hill}
+R.~Carter Hill, William~E. Griffiths, and Guay~C. Lim.
+\newblock \emph{Principles of Econometrics}.
+\newblock Wiley.
+
+\bibitem[Imbens(2004)]{imbens2004}
+Guido~W Imbens.
+\newblock Nonparametric estimation of average treatment effects under
+  exogeneity: A review.
+\newblock \emph{Review of Economics and statistics}, 86\penalty0 (1):\penalty0
+  4--29, 2004.
+
+\bibitem[Imbens and Rubin(2008)]{rcm}
+Guido~W. Imbens and Donald~B. Rubin.
+\newblock Rubin causal model.
+\newblock In Steven~N. Durlauf and Lawrence~E. Blume, editors, \emph{The New
+  Palgrave Dictionary of Economics}. Palgrave Macmillan, Basingstoke, 2008.
+
+\bibitem[Kachigan(1986)]{skk}
+Sam~Kash Kachigan.
+\newblock \emph{Statistical Analysis: An Interdisciplinary Introduction to
+  Univariate and Multivariate Methods}.
+\newblock Radius, 1986.
+
+\bibitem[Kenny(1975)]{kenny1975quasi}
+David~A. Kenny.
+\newblock A quasi-experimental approach to assessing treatment effects in the
+  nonequivalent control group design.
+\newblock \emph{Psychological Bulletin}, 82\penalty0 (3):\penalty0 345, 1975.
+
+\bibitem[Kish(1965)]{kish1965survey}
+Leslie Kish.
+\newblock Survey sampling. new york: J.
+\newblock \emph{Wiley \& Sons}, 643:\penalty0 16, 1965.
+
+\bibitem[Little and Rubin(2000)]{little2000causal}
+Roderick~J Little and Donald~B Rubin.
+\newblock Causal effects in clinical and epidemiological studies via potential
+  outcomes: concepts and analytical approaches.
+\newblock \emph{Annual review of public health}, 21\penalty0 (1):\penalty0
+  121--145, 2000.
+
+\bibitem[Lord({\natexlab{a}})]{lord67}
+F.~M. Lord.
+\newblock A paradox in the interpretations of group comparisons.
+\newblock \emph{Psychological Bulletin}, {\natexlab{a}}.
+
+\bibitem[Lord({\natexlab{b}})]{lord69}
+F.~M. Lord.
+\newblock Statistical adjustments when comparing preexisting groups.
+\newblock \emph{Psychological Bulletin}, {\natexlab{b}}.
+
+\bibitem[Lyles et~al.(2007)Lyles, Lin, and Williamson]{lyles2007practical}
+Robert~H Lyles, Hung-Mo Lin, and John~M Williamson.
+\newblock A practical approach to computing power for generalized linear models
+  with nominal, count, or ordinal responses.
+\newblock \emph{Statistics in medicine}, 26\penalty0 (7):\penalty0 1632--1648,
+  2007.
+
+\bibitem[Maxwell et~al.(2008)Maxwell, Kelley, and Rausch]{maxwell2008sample}
+Scott~E Maxwell, Ken Kelley, and Joseph~R Rausch.
+\newblock Sample size planning for statistical power and accuracy in parameter
+  estimation.
+\newblock \emph{Annu. Rev. Psychol.}, 59:\penalty0 537--563, 2008.
+
+\bibitem[McCulloch et~al.()McCulloch, Searle, , and Neuhaus]{glm}
+Charles~E. McCulloch, Shayle~R. Searle, , and John~M. Neuhaus.
+\newblock \emph{Generalized, Linear, and Mixed Models}.
+\newblock Wiley.
+
+\bibitem[Meyer(1995)]{meyer1995natural}
+Breed~D. Meyer.
+\newblock Natural and quasi-experiments in economics.
+\newblock \emph{Journal of business \& economic statistics}, 13\penalty0
+  (2):\penalty0 151--161, 1995.
+
+\bibitem[Raudenbush and Bryk()]{hlm}
+Stephen~W. Raudenbush and Anthony Bryk.
+\newblock \emph{Hierarchical Linear Models: Applications and Data Analysis
+  Methods}.
+\newblock Sage.
+
+\bibitem[Rice(2007)]{rice2007mathematical}
+John~A Rice.
+\newblock \emph{Mathematical statistics and data analysis}.
+\newblock Cengage Learning, 2007.
+
+\bibitem[Rosenbaum and Rubin(1983)]{rosenbaum1983central}
+Paul~R. Rosenbaum and Donald~B. Rubin.
+\newblock The central role of the propensity score in observational studies for
+  causal effects.
+\newblock \emph{Biometrika}, 70\penalty0 (1):\penalty0 41--55, 1983.
+
+\bibitem[Rubin(1974)]{rubin74}
+Donald~B. Rubin.
+\newblock Estimating causal effects of treatments in randomized and
+  nonrandomized studies.
+\newblock \emph{Journal of educational Psychology}, 66\penalty0 (5):\penalty0
+  688, 1974.
+
+\bibitem[Rubin(2001)]{rubin2001using}
+Donald~B. Rubin.
+\newblock Using propensity scores to help design observational studies:
+  application to the tobacco litigation.
+\newblock \emph{Health Services and Outcomes Research Methodology}, 2\penalty0
+  (3-4):\penalty0 169--188, 2001.
+
+\bibitem[Rubin(2005)]{rubin05}
+Donald~B. Rubin.
+\newblock Causal inference using potential outcomes.
+\newblock \emph{Journal of the American Statistical Association}, 100\penalty0
+  (469):\penalty0 322--331, 2005.
+
+\bibitem[Shadish et~al.()Shadish, Cook, and Campbell]{qed}
+William~R. Shadish, Thomas~D. Cook, and Donald~T. Campbell.
+\newblock \emph{Experimental and Quasi-Experimental Designs for Generalized
+  Causal Inference}.
+\newblock Cengage Learning.
+
+\bibitem[Spybrook et~al.(2006)Spybrook, Raudenbush, Liu, Congdon, and
+  Mart{\'\i}nez]{spybrook2006optimal}
+Jessaca Spybrook, Stephen~W Raudenbush, Xiao-feng Liu, Richard Congdon, and
+  Andr{\'e}s Mart{\'\i}nez.
+\newblock Optimal design for longitudinal and multilevel research:
+  Documentation for the “optimal design” software.
+\newblock \emph{Survey Research Center of the Institute of Social Research at
+  University of Michigan}, 2006.
+
+\bibitem[V{\ae}th and Skovlund(2004)]{vaeth2004simple}
+Michael V{\ae}th and Eva Skovlund.
+\newblock A simple approach to power and sample size calculations in logistic
+  regression and cox regression models.
+\newblock \emph{Statistics in medicine}, 23\penalty0 (11):\penalty0 1781--1792,
+  2004.
+
+\end{thebibliography}

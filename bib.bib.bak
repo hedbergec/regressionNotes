@@ -1,0 +1,318 @@
+@book{cohen1988statistical,
+  title={Statistical power analysis for the behavioral sciencies},
+  author={Cohen, Jack},
+  year={1988},
+  publisher={Routledge}
+}
+@book{rice2007mathematical,
+  title={Mathematical statistics and data analysis},
+  author={Rice, John A},
+  year={2007},
+  publisher={Cengage Learning}
+}
+@article{kish1965survey,
+  title={Survey Sampling. New York: J},
+  author={Kish, Leslie},
+  journal={Wiley \& Sons},
+  volume={643},
+  pages={16},
+  year={1965}
+}
+@article{maxwell2008sample,
+  title={Sample size planning for statistical power and accuracy in parameter estimation},
+  author={Maxwell, Scott E and Kelley, Ken and Rausch, Joseph R},
+  journal={Annu. Rev. Psychol.},
+  volume={59},
+  pages={537--563},
+  year={2008},
+  publisher={Annual Reviews}
+}
+@book{gill2006essential,
+  title={Essential mathematics for political and social research},
+  author={Gill, Jeff},
+  year={2006},
+  publisher={Cambridge University Press}
+}
+@book{eliason1993maximum,
+  title={Maximum likelihood estimation: Logic and practice},
+  author={Eliason, Scott R},
+  number={96},
+  year={1993},
+  publisher={Sage}
+}
+@book{fisher1973statistical,
+  title={Statistical methods, experimental design, and scient ific inference},
+  author={Fisher, Ronald Aylmer and Bennett, J Henry},
+  year={1973},
+  publisher={Oxford University Press}
+}
+@article{connor1987sample,
+  title={Sample size for testing differences in proportions for the paired-sample design},
+  author={Connor, Robert J},
+  journal={Biometrics},
+  pages={207--211},
+  year={1987},
+  publisher={JSTOR}
+}
+@article{faul2009statistical,
+  title={Statistical power analyses using G* Power 3.1: Tests for correlation and regression analyses},
+  author={Faul, Franz and Erdfelder, Edgar and Buchner, Axel and Lang, Albert-Georg},
+  journal={Behavior research methods},
+  volume={41},
+  number={4},
+  pages={1149--1160},
+  year={2009},
+  publisher={Springer}
+}
+@article{vaeth2004simple,
+  title={A simple approach to power and sample size calculations in logistic regression and Cox regression models},
+  author={V{\ae}th, Michael and Skovlund, Eva},
+  journal={Statistics in medicine},
+  volume={23},
+  number={11},
+  pages={1781--1792},
+  year={2004},
+  publisher={Wiley Online Library}
+}
+@article{lyles2007practical,
+  title={A practical approach to computing power for generalized linear models with nominal, count, or ordinal responses},
+  author={Lyles, Robert H and Lin, Hung-Mo and Williamson, John M},
+  journal={Statistics in medicine},
+  volume={26},
+  number={7},
+  pages={1632--1648},
+  year={2007},
+  publisher={Wiley Online Library}
+}
+@book{freedman2009statistical,
+  title={Statistical models: theory and practice},
+  author={Freedman, David},
+  year={2009},
+  publisher={Cambridge University Press}
+}
+@misc{william1993learning,
+  title={Learning and Practicing Econometrics},
+  author={Griffiths, William E. and Hill, R. Carter and Judge, George G.},
+  year={1993},
+  publisher={John Wiley and Sons, inc}
+}
+@book{aberson2011applied,
+  title={Applied power analysis for the behavioral sciences},
+  author={Aberson, Christopher L.},
+  year={2011},
+  publisher={Routledge}
+}
+@book{cameron2005microeconometrics,
+  title={Microeconometrics: methods and applications},
+  author={Cameron, A. Colin},
+  year={2005},
+  publisher={Cambridge university press}
+}
+@article{freedman2008weighting,
+  title={Weighting regressions by propensity scores},
+  author={Freedman, David A. and Berk, Richard A.},
+  journal={Evaluation Review},
+  volume={32},
+  number={4},
+  pages={392--409},
+  year={2008},
+  publisher={Sage Publications}
+}
+@article{goldstein2002partitioning,
+  title={Partitioning variation in multilevel models},
+  author={Goldstein, Harvey and Browne, William and Rasbash, Jon},
+  journal={Understanding Statistics: Statistical Issues in Psychology, Education, and the Social Sciences},
+  volume={1},
+  number={4},
+  pages={223--231},
+  year={2002},
+  publisher={Taylor \& Francis}
+}
+@article{rubin2001using,
+  title={Using propensity scores to help design observational studies: application to the tobacco litigation},
+  author={Rubin, Donald B.},
+  journal={Health Services and Outcomes Research Methodology},
+  volume={2},
+  number={3-4},
+  pages={169--188},
+  year={2001},
+  publisher={Springer}
+}
+@article{austin2011tutorial,
+  title={A tutorial and case study in propensity score analysis: An application to estimating the effect of in-hospital smoking cessation counseling on mortality},
+  author={Austin, Peter C.},
+  journal={Multivariate behavioral research},
+  volume={46},
+  number={1},
+  pages={119--151},
+  year={2011},
+  publisher={Taylor \& Francis}
+}
+@article{caliendo2008some,
+  title={Some practical guidance for the implementation of propensity score matching},
+  author={Caliendo, Marco and Kopeinig, Sabine},
+  journal={Journal of economic surveys},
+  volume={22},
+  number={1},
+  pages={31--72},
+  year={2008},
+  publisher={Wiley Online Library}
+}
+@INCOLLECTION{rcm,
+  TITLE  =  "Rubin causal model",
+  BOOKTITLE  =  "The New Palgrave Dictionary of Economics",
+  AUTHOR  =  "Imbens, Guido W. and Rubin, Donald B.",
+  EDITOR  =  "Durlauf, Steven N. and Blume, Lawrence E.",
+  YEAR  =  "2008",
+  PUBLISHER  =  "Palgrave Macmillan",
+  ADDRESS  =  "Basingstoke",
+}
+@article{rosenbaum1983central,
+  title={The central role of the propensity score in observational studies for causal effects},
+  author={Rosenbaum, Paul R. and Rubin, Donald B.},
+  journal={Biometrika},
+  volume={70},
+  number={1},
+  pages={41--55},
+  year={1983},
+  publisher={Biometrika Trust}
+}
+@article{little2000causal,
+  title={Causal effects in clinical and epidemiological studies via potential outcomes: concepts and analytical approaches},
+  author={Little, Roderick J and Rubin, Donald B},
+  journal={Annual review of public health},
+  volume={21},
+  number={1},
+  pages={121--145},
+  year={2000},
+  publisher={Annual Reviews 4139 El Camino Way, PO Box 10139, Palo Alto, CA 94303-0139, USA}
+}
+@article{imbens2004,
+  title={Nonparametric estimation of average treatment effects under exogeneity: A review},
+  author={Imbens, Guido W},
+  journal={Review of Economics and statistics},
+  volume={86},
+  number={1},
+  pages={4--29},
+  year={2004},
+  publisher={MIT Press}
+}
+@article{meyer1995natural,
+  title={Natural and quasi-experiments in economics},
+  author={Meyer, Breed D.},
+  journal={Journal of business \& economic statistics},
+  volume={13},
+  number={2},
+  pages={151--161},
+  year={1995},
+  publisher={Taylor \& Francis}
+}
+@article{kenny1975quasi,
+  title={A quasi-experimental approach to assessing treatment effects in the nonequivalent control group design.},
+  author={Kenny, David A.},
+  journal={Psychological Bulletin},
+  volume={82},
+  number={3},
+  pages={345},
+  year={1975},
+  publisher={American Psychological Association}
+}
+@article{spybrook2006optimal,
+  title={Optimal design for longitudinal and multilevel research: Documentation for the “Optimal Design” software},
+  author={Spybrook, Jessaca and Raudenbush, Stephen W and Liu, Xiao-feng and Congdon, Richard and Mart{\'\i}nez, Andr{\'e}s},
+  journal={Survey Research Center of the Institute of Social Research at University of Michigan},
+  year={2006}
+}
+@article{rubin05,
+author = {Rubin, Donald B.},
+title = {Causal Inference Using Potential Outcomes},
+journal = {Journal of the American Statistical Association},
+volume = {100},
+number = {469},
+pages = {322-331},
+year = {2005}
+}
+@article{rubin74,
+  title={Estimating causal effects of treatments in randomized and nonrandomized studies.},
+  author={Rubin, Donald B.},
+  journal={Journal of educational Psychology},
+  volume={66},
+  number={5},
+  pages={688},
+  year={1974},
+  publisher={American Psychological Association}
+}
+@book{glm,
+    author    = {Charles E. McCulloch and Shayle R. Searle and and John M. Neuhaus},
+    title     = {Generalized, Linear, and Mixed Models},
+    publisher = {Wiley},
+    %series   = {Wiley Series in Probability and Statistics},
+    year      = 2008,
+}
+@book{agresti,
+    author    = {Alan Agresti and Barbara Finlay},
+    title     = {Statistical Methods for the Social Sciences},
+    publisher = {Pearson},
+    %edition  = {4},
+    year      = {2008},
+}
+@book{hill,
+    author    = {R. Carter Hill and William E. Griffiths and Guay C. Lim},
+    title     = {Principles of Econometrics},
+    publisher = {Wiley},
+    %edition  = {4},
+    year      = {2011},
+}
+@book{hlm,
+    author    = {Stephen W. Raudenbush and Anthony Bryk},
+    title     = {Hierarchical Linear Models: Applications and Data Analysis Methods},
+    publisher = {Sage},
+    %series   = {Advanced Quantitative Techniques in the Social Sciences},
+    %edition  = {2},
+    year      = {2001},
+}
+@book{qed,
+    author    = {William R. Shadish and Thomas D. Cook and Donald T. Campbell},
+    title     = {Experimental and Quasi-Experimental Designs for Generalized Causal Inference},
+    publisher = {Cengage Learning},
+    %edition  = {2},
+    year      = {2001},
+}
+@book{fox,
+    author    = {John Fox},
+    title     = {Applied Regression Analysis and Generalized Linear Models},
+    publisher = {Sage},
+    %edition  = {2},
+    year      = {2008},
+}
+@book{skk,
+    author    = {Sam Kash Kachigan},
+    title     = {Statistical Analysis: An Interdisciplinary Introduction to Univariate and Multivariate Methods},
+    publisher = {Radius},
+    year      = {1986},
+}
+@article{rd,
+    author    = {Howard S. Bloom},
+    title     = {Modern Regression Discontinuity Analysis},
+    journal   = {Journal of Research on Educational Effectiveness},
+    %volume   = {5},
+    %number   = {1},
+    %pages    = {43-82},
+    year      = {2012},
+}
+@article{lord67,
+    author    = {F. M. Lord},
+    title     = {A Paradox in the Interpretations of Group Comparisons},
+    journal   = {Psychological Bulletin},
+    %volume   = {68},
+    %pages    = {304-305},
+    year      = {1967},
+}
+@article{lord69,
+    author    = {F. M. Lord},
+    title     = {Statistical Adjustments when Comparing Preexisting groups},
+    journal   = {Psychological Bulletin},
+    %volume   = {72},
+    %pages    = {336-337},
+    year      = {1969},
+}

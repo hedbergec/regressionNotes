@@ -1,0 +1,167 @@
+
+
+\chapter{A little probability theory}
+\label{sec:prob}
+
+At the end of the day, all analyses are attempting to make some statement(s) with two parts:
+\begin{itemize}
+\item{Some assertion (or set of assertions)}
+\item{The probability that this assertion is (or these assertions are) false}
+\end{itemize}
+Most of these notes focus on the methods to make such statements using a regression model of some sort. These regression models produce some {\it statistic} of interest, whether it is a coefficient, predicted value, or measure of model fit. Generally, all statistics have an associated {\it variance}, or measure of uncertainty that can generally be used to produce some estimated probability of observing the data on hand if we assume some (null) worldview.  Thus, we should never lose sight of keeping track of the probabilities associated with our assertions. The probability associated with an assertion depends on several factors:
+\begin{itemize}
+\item{The statistic being estimated, for example}
+\subitem{a coefficient from a OLS regression}
+\subitem{a coefficient from a GLS regression}
+\subitem{a coefficient from a GLM regression}
+\subitem{a coefficient from a Mixed regression model}
+\item{The degrees of freedom associated with the statistic, if applicable}
+\item{The distribution of the statistic, for example}
+\subitem{z}
+\subitem{t}
+\subitem{F}
+\subitem{$\chi^2$}
+\item{How the data were collected, for example}
+\subitem{Census or administrative data}
+\subitem{Simple random sample}
+\subitem{Stratified random sample}
+\subitem{Cluster randomized sample}
+\subitem{Stratified cluster randomized sample}
+\end{itemize}
+
+Therefore, it is important to remind ourselves of the basics of probability, random variables, and samples. This will not be a very in-depth discussion of these concepts, but should put you on notice to spend some time to better understand them as you start your research career.
+
+The study of probability as a formal science started in $17^{th}$ century France when a gambler started talking to his mathematician buddies, namely, Pascal (yup, that Pascal). We generally care about probability not because the events we study are random, but that the observations we have in our data set, our {\it sample}, generally arrived there through some random process.
+
+Here are some basic concepts, quickly.
+
+The universe of possible events is considered the {\bf sample space}, which we can sometimes call $\Omega$. An element of the sample space is sometimes called $\omega$. For example, if we roll a dice, we have 6 possible sides than can land upright:
+\[
+\Omega = \left\{1,2,3,4,5,6\right\}
+\]
+From a sample space, we are generally concerned with a particular event occurring, for example, we can say that the event $A$ occurs when we roll a dice and a number greater than or equal to 5 shows up
+\[
+A = \left\{5,6\right\}
+\]
+or we can say that the even $B$ occurs when we roll a dice and a number less than or equal to 2 shows up
+\[
+B = \left\{1,2\right\}
+\]
+We can also say that the event $C$ is the union of $A$ and $B$ when either $A$ or $B$ occur
+\[
+C = A \cup B
+\]
+or
+\[
+C = \left\{1,2,5,6\right\}
+\]
+Suppose we had another even $D$, that is the number on the dice was even
+\[
+D = \left\{2,4,6\right\}
+\]
+We could say that the intersection of events $C$ and $D$ is event $E$
+\[
+E = C \cap D
+\]
+or
+\[
+E = \left\{2,6\right\}
+\]
+Of course, we could always get an empty set, that is a set with nothing in it. For example if we have event $F$, that the number of the dice is odd, then
+\[
+E \cap F = \emptyset
+\]
+in which case we can say that $E$ and $F$ are disjoint.
+
+Here are some important laws
+\begin{itemize}
+\item{Communicative law}
+\begin{equation}
+A \cup B = B \cup A
+\end{equation}
+\begin{equation}
+A \cap B = B \cap A
+\end{equation}
+\item{Associative law}
+\begin{equation}
+\left(A\cup B\right)\cup C = A \cup \left(B \cup C\right)
+\end{equation}
+\begin{equation}
+\left(A\cap B\right)\cap C = A \cap \left(B \cap C\right)
+\end{equation}
+\item{Distributive law}
+\begin{equation}
+\left(A \cup B\right)\cap C = \left(A \cap C\right)\cup\left(B \cap C\right)
+\end{equation}
+\begin{equation}
+\left(A \cap B\right)\cup C = \left(A \cup C\right)\cap\left(B \cup C\right)
+\end{equation}
+\end{itemize}
+
+Next, we have the concept of a {\bf probability measure} on $\Omega$. A probability measure is a function $P$ that maps subsets of $\Omega$ to a real number. The rules (or axioms) are
+\begin{itemize}
+\item{The probability of the whole sample space is 1}
+\begin{equation}
+P\left(\Omega\right) = 1
+\end{equation}
+\item{If A a subset of the sample space, then the probability of greater than or equal to 0}
+\begin{equation}
+\mbox{if } A \subset \Omega \mbox{, then } P\left(A\right) \ge 0
+\end{equation}
+and the big one that makes a lot of things work:
+\item{If $A$ and $B$ are disjoint, then the probability of either happening is the sub of the probabilities of each}
+\begin{equation}
+P\left(A \cup B\right) = P\left(A\right) + P\left(B\right)
+\end{equation}
+which generalizes to (if all $S$ sets $1\ldots N$ are disjoint)
+\begin{equation}
+P\left(\bigcup_{i=1}^N S_i\right)= \sum_{i=1}^N P\left(S_i\right)
+\end{equation}
+\end{itemize}
+
+These axioms lead to several useful observations. First, the probability of a complement of a set $A$, $A^c$, is $1-P\left(A\right)$. Second, the probability of a empty set is 0, or $P\left(\emptyset\right) = 0$. Third, if $A \subset B$, then $P\left(A\right) \le P\left(B\right)$. Finally, $P\left(A \cup B\right) = P\left(A\right) + P\left(B\right) - P\left(A\cap B\right)$.
+
+Other important observations and laws include the definition of conditional probabilities
+\begin{equation}
+P\left(A\mid B\right) = \frac{P\left(A\cap B\right)}{P\left(B\right)}
+\end{equation}
+assuming, of course, that $P\left(B\right) \neq 0$. This can work backwards,
+\begin{equation}
+P\left(A\cap B\right) = P\left(A\mid B\right)P\left(B\right)
+\end{equation}
+This makes life easier down the road when you consider the situation in which $B_1\ldots B_n$ are a set of mutually disjoint events with non-zero probabilities. In that case, you can get the total probability of another event $A$ with
+\begin{equation}
+P\left(A\right) = \sum_{i=1}^n P\left(A \mid B_i \right)P\left(B_i\right)
+\end{equation}
+Which leads to Bayes' rule. If we have the same circumstances, then we can actually find the probability of an event $B_j$ in the other way
+\begin{equation}\label{eq:bayes}
+P\left(B_j \mid A\right) = \frac{P\left(A\mid B_j\right)P\left(B_j\right)}{\sum_{i=1}^n P\left(A \mid B_i \right)P\left(B_i\right)}
+\end{equation}
+
+The frequentist approach produces probabilities of statistics on the basis of a hypothetical set of repeated samples or experiments. Bayesians, on the other hand, assert that the probability of a statistic should be based on the researchers quantification of the probability (usually based on computer simulations). Neither is without merit or warts. We take the frequentist approach here because it is more common, but not because it is necessarily "better."
+
+This is all well and good, but how to you compute probabilities? Basically, if you have a sample space $\Omega$ with elements $\left\{\omega_1 \ldots \omega_n\right\}$, each element has a certain probability $P\left(\omega_i\right) = p_i$. If we want the probability of $A$, we add all the probabilities in the set $A$. For example, dice again, the probability of an even number roll when all sides are equally possible are
+\[
+\Omega = \left\{1,2,3,4,5,6\right\}
+\]
+where
+\[
+p_1 = \frac{1}{6}\ldots p_6= \frac{1}{6}
+\]
+so
+\[
+P\left(even\right) = p_2+p_4+p_6 = \frac{1}{6}+\frac{1}{6}+\frac{1}{6} = \frac{3}{6} = \frac{1}{2} = 0.5
+\]
+In general, if the sample space has $N$ elements, and if $A$ can occur in any $n$ mutually exclusive ways, then $P\left(A\right) = \frac{n}{N}$.
+
+In order to talk samples, we now need to discuss permutations. A permutation is an ordered arrangement of elements--in other words, order matters in permutations. It is important to note whether our permutation occurs with or without replacement.
+
+If we have a sample space of $N$ elements and a sample size of $n$, there are a possible $N^n$ number of unique ordered samples that can be drawn if we replace elements after drawing them. If we do not replace, then the expression is more complicated in that we have $N\left(N-1\right)\ldots\left(N-n\right)\left(N-n+1\right)$ different ordered samples.
+
+Of course, order in sample rarely matters, so we really care about combinations of elements. If we sample without replacement and do not care about order, then the number of possible unordered samples are
+\begin{equation}
+\frac{N!}{\left(N-n\right)!n!}
+\end{equation}
+which we can codify as ${N \choose n}$.
+
+We always talk about independent sample elements. Therefore, we can say that events A and B are independent when $P\left(A \cap B\right) = P\left(A\right)P\left(B\right)$.

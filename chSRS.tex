@@ -1,0 +1,74 @@
+
+\chapter{Simple random samples}
+These notes assume your data come from a simple random sample. Here, I describe what that actually means.
+
+Simple random samples are the most basic of "good" samples. Essentially, you start with a sampling frame and each element has an equal chance of being selected. You then randomly selected $n$ elements.
+
+Other types of more complex samples are those usually used in large-scale surveys. While the estimation procedures for complex samples are more difficult, the cost savings and quality assurance that come with this extra effort are worth it. Some examples of complex samples include stratified random samples, cluster samples, and stratified cluster samples.
+
+\section{Back to probability}
+
+We think of the universe of objects to which we want to generalize to as a finite population. This is the sampling space $\Omega$, defined in Chapter~\ref{sec:prob}, where each element is indexed by $i$:
+\[
+\Omega = \left\{i=1, i=2, i=3,\ldots, i=N\right\}
+\]
+From this population, we have a set of $\frac{N!}{\left(N-n\right)!n!}$ unordered samples of size $n$, each with a known probability. In simple probability samples, each possible sample $S_s$ has an equal chance of being selected.
+
+Because each sample has a known probability, we can determine the chance of any one unit being selected by adding up the probability of each sample in which they appear. That is, if we have $\left\{S_1, S_2, \ldots , S_m\right\}$ possible samples and
+\begin{equation}
+I_{ij} = \left\{ \begin{array}{ll}
+     1 & \mbox{unit } i \mbox{ in sample j};\\
+     0 & \mbox{otherwise}.\end{array} \right.
+\end{equation}
+then
+\begin{equation}
+P\left(\mbox{unit } i \mbox{ in sample}\right) = \pi_i = \sum_{j=1}^m I_{ij}P\left(S_j\right)
+\end{equation}.
+
+\section{Expectation}
+
+The backbone of statistical inference depends on the idea of a sampling distribution and expectation. A sampling distribution is a statistic's distribution based on all possible samples. That is, if we took the mean of each possible sample, the sampling distribution is the distribution of each sample's mean.
+
+A statistic's expected value is simply the mean of the sampling distribution. That is, for some statistic $\theta$, the expected value is the sum of each sample's estimate of $\theta$, or $\hat{\theta}$, times the probability of drawing that sample.
+\begin{equation}
+E\left[\hat{\theta}\right]=\sum_{j=1}^mP\left(S_j\right)\hat{\theta}_j
+\end{equation}
+We worry about bias when there is a difference between the expected value and the true value, $\mbox{Bias} = E\left[\hat{\theta}\right]-\theta$. Finally, standard errors come from the variance of the sampling distribution, which is
+\begin{equation}
+var\left[\hat{\theta}\right] = \sum_{j=1}^mP\left(S_j\right)\left(\hat{\theta}_j-E\left[\hat{\theta}\right]\right)^2
+\end{equation}
+
+\section{Simple random sampling}
+Life is pretty simple with simple random sampling (without replacement), the probability of each possible sample is the same,
+\begin{equation}
+P\left(S\right) = \frac{1}{{N\choose n}} = \frac{n!\left(N-n\right)!}{N!}
+\end{equation}
+in these cases, since $P\left(S\right)$ is the same for all samples, the estimates for various parameters are very simple. The population mean of a variable $y$ is
+\begin{equation}
+\mu = \frac{1}{N}\sum_{i=1}^Ny_i
+\end{equation}
+with a variance
+\begin{equation}
+\sigma^2 = \frac{1}{N-1}\sum_{i=1}^N\left(y_i-\mu\right)^2
+\end{equation}
+and standard deviation of $\sqrt{\sigma^2}$.
+
+If we have a sample, the chance of being in the sample is a random variable,
+\begin{equation}
+I_{i} = \left\{ \begin{array}{ll}
+     1 & \mbox{unit } i \mbox{ in sample};\\
+     0 & \mbox{otherwise}.\end{array} \right.
+\end{equation}
+and so we think of the estimated mean as
+\begin{equation}
+\bar{y} = \frac{1}{\sum_{i=1}^NI_i}\sum_{i=1}^Ny_i\times I_i
+\end{equation}
+which reduces to
+\begin{equation}
+\bar{y} = \frac{1}{n}\sum_{i\in S}y_i
+\end{equation}
+and the sample variance is
+\begin{equation}
+s^2 = \frac{1}{n-1}\sum_{i \in S1}\left(y_i-\bar{y}\right)^2
+\end{equation}
+There are other details, like the finite population correction term, that are important to sampling. Since this is mainly about regression, we will skip these for now.

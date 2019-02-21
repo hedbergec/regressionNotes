@@ -1,0 +1,61 @@
+
+
+\chapter{Generalized least squares, in general}
+\label{sec:glmchapter}
+
+The next few chapters will utilize a method of estimation known as generalized least squares. We encountered this method first when talking about solving non-constant variance in Chapter~\ref{sec:het}. In this brief chapter, we outline the basics of using generalized least squares.
+
+Generalized least squares is essentially a weighting technique to solve the issue of correlated error terms.
+
+Recall the linear model in matrix form, ~\eqref{eq:matrixolsmodel}
+\[
+{\bf{y=Xb+e}}
+\]
+\[
+\begin{bmatrix}
+y_i \\
+\vdots \\
+y_N \\
+\end{bmatrix}
+= \\
+\begin{bmatrix}
+1&x_{11}&\cdots&x_{p11} \\
+\vdots&\vdots&\ddots&\vdots \\
+1&x_{1N}&\cdots&x_{pN} \\
+\end{bmatrix}
+\begin{bmatrix}
+\beta_0 \\
+\beta_1 \\
+\vdots \\
+\beta_p \\
+\end{bmatrix}
++ \\
+\begin{bmatrix}
+e_1 \\
+\vdots \\
+e_N \\
+\end{bmatrix}
+\]
+Life is easier when we assume each error term, $e_i$ is independent of all other error terms. That allows us to say that they are distributed normally with mean 0 and variance $\sigma^2$. If this is not the case, we need to express the residuals as being normal, with a mean 0, but a variance-covariance matrix of $\Sigma_{ee}$
+\begin{equation}
+{\bf e} \sim N\left({\bf 0,\Sigma_{ee}}\right)
+\end{equation}
+The use of $\Sigma$ is a little confusing, but we use it since it is the capital version of $\sigma$. $\Sigma_{ee}$ is a theoretical matrix in which the variance of the residuals fall along the diagonal, and the relationship of each residual is expressed in the off-diagonals.
+
+If $\Sigma_{ee}$ were known, we could write out the log-likelihood function for the slopes of a normally distributed outcome
+\begin{equation}
+\mbox{ln}\left(L\left({\bf b, \vert \bf y}\right)\right)=-\frac{N}{2}\mbox{ln}\left(2\pi\right)-\frac{1}{2}\mbox{ln}\left(\mbox{det}\bf \Sigma_{ee}\right)-\frac{1}{2}{\bf \left(y-Xb\right)'\Sigma_{ee}^{-1}\left(y-Xb\right)}
+\end{equation}
+and like least squares in general, we are working to minimize the residuals, ${\bf \left(y-Xb\right)'\Sigma_{ee}^{-1}\left(y-Xb\right)}$. Doing the calculus to find the estimator of {\bf b} yields
+\begin{equation}
+{\bf b} = \left({\bf X'\Sigma_{ee}^{-1}X}\right)^{-1}{\bf X'\Sigma_{ee}^{-1}y}
+\end{equation}
+with variances of our slopes provided by
+\begin{equation}
+V\left({\bf b_{GLS}}\right)= \left({\bf X'\Sigma_{ee}^{-1}X}\right)^{-1}
+\end{equation}
+As I stated earlier, generalized least squares is essentially a transformation. If we consider the matrix $\Gamma$ to be the square-root of $\Sigma_{ee}^{-1}$, then $\Gamma'\Gamma = \Sigma_{ee}^{-1}$. In that case, $X^{*} = \Gamma X$ and $y^{*} = \Gamma y$, and the estimator of the slopes is the familiar
+\begin{equation}
+{\bf b = \left(X^{*'}X^{*}\right)^{-1}X^{*'}y^{*}}
+\end{equation}
+which is why GLS is generally accomplished with weights. Of course, we need to guess at these weights, as we do with non-constant variance problems, see Chapter~\ref{sec:het}.

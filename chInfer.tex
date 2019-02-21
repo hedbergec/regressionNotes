@@ -1,0 +1,153 @@
+\chapter{Basic Statistical Inference}
+\label{sec:inference}
+\section{Sampling distributions}
+Almost all the methods in these notes assume a simple random sample. {\bf If it is not a simple random sample, such as a two-stage cluster randomized sample from a major survey, these notes do not apply.} While the population mean, $\mu$, is fixed, the estimation of the mean, $\bar{x}$, is random because the selection of the sample is random. It therefore makes sense that if we were to gather another sample, that new sample's estimation of the mean will be different. This is the idea of sampling distributions: given a large number of samples, how will the estimate likely vary? What would the range of our estimate be 95 percent of the time?
+
+\subsection{Basic principles of the central limit theorem}
+If repeated random samples of size $N$ are drawn from any population with mean $\mu$ and standard deviation $\sigma$, as $N$ becomes large the sampling distribution of sample means will approach normality, with a mean of $\mu$ and standard deviation $\frac{\sigma}{\sqrt{N}}$.
+
+There are two important parts here: that the mean of the sampling distribution should be close to the actual mean, and the standard deviation of the sampling distribution should be close to the standard deviation of the population divided by the square root of the sample size.
+
+Keep in mind that the population distribution doesn't have to be normal--but the sampling distribution becomes normal with large N.
+
+It is important to note that the central limit theorem suggests that the mean of our sample can be used as our guess of the population mean and we can quantify the uncertainly of this estimate with the variance of the estimates, of which the standard error is the square-root. This standard error is an estimate of the sampling distribution's standard deviation.
+
+\section{The standard error of the mean}
+Of course, it is extremely expensive to obtain repeated samples to get a good estimate of the mean. Researchers generally only have the resources for a single sample.
+
+The formula for the standard deviation of samples of the a mean is similar to the standard deviation of the sampling distribution, except we substitute the population standard deviation, $\sigma$, with the estimate of the standard deviation from our sample, $s$. We start with the variance of the statistic, $\bar{x}$:
+\begin{equation}
+V\left(\bar{x}\right) = \frac{\sigma^2}{N}
+\end{equation}
+the square-root of which is the standard error
+\begin{equation}
+SE\left(\bar{x}\right) = \sqrt{\frac{\sigma^2}{N}}
+\end{equation}
+or the more familiar formula
+\begin{equation}\label{eq:meanvar}
+SE\left(\bar{x}\right) = \frac{\sigma}{\sqrt{N}}
+\end{equation}
+and our estimate of this replaces $\sigma$ with $s$
+\begin{equation}
+SE\left(\bar{x}\right) = \frac{s}{\sqrt{N}}
+\end{equation}
+This gives us the "variance" of our mean estimate. All statistics have "variances" associated with them. Much of the more advanced statistics and sample statistics that are taught in graduate schools focus on getting the right variances, and thus the right standard errors. Much the time, the formulas of the point estimates (the statistics) are pretty much the same.
+
+\section{The standard error of a proportion}
+The variance of a mean is not a function of the value of the mean, it just depends on the standard deviation. In the case of proportions, the standard deviation is a function of the estimate itself:
+\begin{equation}\label{eq:pvar}
+\sigma_p=p\left(1-p\right)
+\end{equation}
+therefore, the standard error of the proportion is
+\begin{equation}
+SE\left(p\right) = \sqrt{\frac{p\left(1-p\right)}{N}}
+\end{equation}
+\section{Hypothesis testing}
+So now that we have an estimate of the mean, and a sense of our uncertainty about this estimate, we can now ask a theoretical question: let's say we did draw several samples from the population, what is the range for 95 percent of the means we would get? We can do this by calculating a confidence interval of the estimated statistic. Confidence intervals generally take the form of
+\begin{equation}
+CI\left(\theta,\left(1-\alpha\right)\times100\right)=\hat{\theta}\pm t_{df,\alpha/2}SE\left(\hat{\theta}\right)
+\end{equation}
+Where $\theta$ is the parameter of interest, $\hat{\theta}$ is the statistic that estimates the parameter, $SE\left(\hat{\theta}\right)$ is the standard error of that statistic, $\alpha$ is the Type I error rate, and $t$ is the critical value of the $t$-distribution associated with the $df$ degrees of freedom of the statistic and the Type I error rate. As you can see in Figure~\ref{fig:tdist}, the $t$ distribution is similar to the $Z$ distribution except that it has slightly different shapes for different degrees of freedom.
+
+In this case, the parameter of interest is the population mean, $\mu$. We are estimating that with the sample mean statistic, $\bar{y}$ . Note that we are now talking about a variable $y$ instead of $x$, this is because we are transitioning from any old variable to outcomes, which are typically represented with the variable $y$. For that statistic, we also have a standard error $SE\left(\bar{y}\right)$.
+
+In the social sciences, the common Type I error rate is 5 percent, or $\alpha = 0.05$. What is the Type I error rate? Type I error is the chance of falsely rejecting the hypothesis that the true parameter could fall outside the confidence interval. In other words, if we are going to make the assertion that some other parameter, $\theta_{null}$, is different than our population parameter, $\theta$, for which we have a sample estimate, $\hat{\theta}$, we want there to be only a $\left(1-\alpha\right)\times100$ percent chance of being wrong.
+
+Finally, we need to scale our standard error by something to create the confidence interval. Since the sampling distribution is normal with a standard deviation of $SE\left(\hat{\theta}\right)$, we want to form our confidence interval so that it gives us the bounds of percent of the possible sample estimates.
+
+One option is to use the normal $Z$ distribution, in which case, for example, a 95 percent confidence interval (meaning that $alpha = 0.05$) is bounded by -1.96 and 1.96. However, we typically use the $t$-distribution rather than the normal distribution because it "flattens out" as the sample size gets small, making the confidence intervals wider (see Figure~\ref{fig:tdist}). Thus, in order to get the right number from the $t$-distribution, we need to know the degrees of freedom, which in a one sample case is $N - 1$. Thus, confidence intervals for smaller samples will always be larger. They are larger for two reasons. First, if we look at the formula for a standard error,
+\begin{equation}
+SE\left(\bar{x}\right) = \frac{s}{\sqrt{N}}
+\end{equation}
+we see that the denominator is essentially the sample size. Smaller samples, larger standard errors. The second reason is that we use the sample size to determine the degrees of freedom when selecting the value from the $t$ distribution. Smaller samples, larger values of $t$ for any given $\alpha$.
+
+Why do we care about this? We care because we may want to make an assertion that the estimated parameter, $\hat{\theta}$, is different from some other value, $\theta_{null}$. If $\theta_{null}$ is outside the confidence interval, then the estimate is statistically different. Another way is to find the difference between $\hat{\theta}$ and $\theta_{null}$, and divide by $SE\left(hat{\theta}\right)$. This gives you the value of $t$ for a confidence interval, and you can compare it to the $t$ you would use to construct a confidence interval, or the critical $t$. If
+\begin{equation}
+\frac{\hat{\theta}-\theta_{null}}{SE\left(\hat{\theta}\right)}>t_{critical, df, \alpha/2}
+\end{equation}
+then the estimate is statistically different.
+
+Can we be absolutely sure? No, because our confidence interval only covers $\left(1-\alpha\right)\times100$ percent of the sampling distribution, another sample could have given us a different answer.
+
+This is all backing into hypothesis testing. We could play this game all day of calculating confidence intervals and seeing if some arbitrary value falls within the bounds. A much simpler approach is to do a hypothesis test.
+
+Most stats text books will tell you that there are 5 steps to doing a hypothesis test that include making an assertion of our Type I error we assume, stating the critical value, etc. I think these steps are silly, since no one ever does these discreetly and in that order. This is how it is done in practice.
+We typically think of $\theta_{null}$ as the null hypothesis (or the value of the parameter or model we will assume to be true). We can write the null hypothesis like this (in terms of the population parameter $\theta$:
+\[
+H_0:\theta=\theta_{null}
+\]
+where we say that the population parameter, $\theta$, is equal to the null value, $\theta_{null}$.
+The alternative hypothesis is that these values are unequal
+\[
+H_1:\theta\ne\theta_{null}
+\]
+First, we calculate our test statistic. Test statistics for parameters that use the $t$-distribution generally take the form of
+\begin{equation}
+t = \frac{\hat{\theta}-\theta_{null}}{SE\left(\hat{\theta}\right)}
+\end{equation}\label{eq:ttest}
+for $t$-tests when we have a specific degrees of freedom, or
+\begin{equation}\label{eq:ztest}
+z = \frac{\hat{\theta}-\theta_{null}}{SE\left(\hat{\theta}\right)}
+\end{equation}
+for $z$ tests when there are no real degrees of freedom to consider.
+
+Basically, what we are doing is calculating the difference between what we estimated and what we assume is true (the null hypothesis) and then we divide that difference by the standard error of our estimate.
+
+We then look up the probability of that test on the appropriate distribution associated with the statistic and degrees of freedom. If that probability is less than 0.05, then we say we can reject the null. I do not talk about one-tail tests.
+
+A probability less than 0.05 means that what we get from our sample is highly unlikely if we assume the null hypotheses, so we can then reject the null hypothesis. There is still a chance that the null is correct and we got a weird sample, that's our Type I error rate, but we feel that 5 percent or less is acceptable.
+
+\subsection{What is a $p$-value?}
+
+When you have a result from one of the major distributions ($Z$, $\chi^2$, $t$, or $F$) and the associated degrees of freedom (if applicable), you can generate a $p$-value. $p$-values allow us to estimate the smallest $\alpha$ could be for a given hypothesis test to be rejected. If the $p$-value is greater than 0.05, generally, you have to accept the null. We use $p$-values mainly because of Fisher, who thought of them as the probability under the null hypothesis of a result as, or more extreme, than the data.
+
+\subsection{Comparing two means}
+\label{sec:pooled}
+I really do not see many comparisons between a population mean and some other value. What I do see a lot of are comparisons between two groups that are sampled independently. We should be careful when we think about this, because in observational studies like the General Social Survey, we do not sample Republicans separately from Democrats. We randomly sample the population, and some are Republicans and some are Democrats. Even in experiments, we randomly sample a group then randomly assign treatment or control.
+
+Regardless, we always talk about testing two independent means, for example between groups A and B. They are independent because the observations from group A are in no way related to observations from group B. However, we are not really dealing with a test of two statistics, we are estimating a single statistic, {\it the difference}. In population terms, this is
+\[
+\theta=\mu_A-\mu_B,
+\]
+and from our sample estimates it is
+\[
+\hat{\theta}=\bar{y}_A-\bar{y}_B.
+\]
+We then state the null hypothesis as this difference being 0 (i.e., $\theta_{null} = 0$) as
+\[
+H_0:\theta=\theta_{null}
+\]
+\[
+H_0:\mu_A-\mu_B=0
+\]
+and the alternative hypothesis as
+\[
+H_1:\mu_A-\mu_B\ne0.
+\]
+In the case of independent means, we can estimate the standard error of this difference using a pooled standard deviation
+\begin{equation}
+SE\left(\bar{y}_A-\bar{y}_B\right)=\frac{s_{pooled}}{\sqrt{N}}
+\end{equation}
+where
+\begin{equation}
+s_{pooled} = \sqrt{\frac{\left(n_A-1\right)s_A^2+\left(n_B-1\right)s_B^2}{n_A+n_B-2}}.
+\end{equation}
+The $t$ test is then
+\begin{equation}
+t = \frac{\bar{y}_A-\bar{y}_B}{SE\left(\bar{y}_A-\bar{y}_B\right)}
+\end{equation}
+We then evaluate the value of $t$ against some level of $\alpha$ using $N-2$ degrees of freedom.
+
+If there is a relationship between groups A and B, like one "group" was a set of pre-tests and the second "group" was a set of post tests, each pre-test and post-test was from the same set of people, then we would be doing a paired t-test. In this case the test is
+\begin{equation}
+t=\frac{\bar{d}\sqrt{N}}{s_d}
+\end{equation}
+where
+\begin{equation}
+\bar{d} = \frac{\sum_{i=1}^N\left(y_{Ai}-y_{Bi}\right)}{N}
+\end{equation}
+and
+\begin{equation}
+s_d = \sqrt{\frac{\sum_{i=1}^N\left(\left(y_{Ai}-y_{Bi}\right)-\bar{d}\right)^2}{N-1}}
+\end{equation}
+with $N$ pairs of values. The test is then evaluated against the $t$ distribution using $N-1$ degrees of freedom.

@@ -1,0 +1,139 @@
+\BOOKMARK [0][-]{chapter*.4}{About}{}% 1
+\BOOKMARK [0][-]{chapter.1}{Univariate statistics}{}% 2
+\BOOKMARK [1][-]{section.1.1}{The mean, statistics, and parameters}{chapter.1}% 3
+\BOOKMARK [1][-]{section.1.2}{Deviance}{chapter.1}% 4
+\BOOKMARK [1][-]{section.1.3}{The sum of squares}{chapter.1}% 5
+\BOOKMARK [1][-]{section.1.4}{The variance}{chapter.1}% 6
+\BOOKMARK [1][-]{section.1.5}{The standard deviation}{chapter.1}% 7
+\BOOKMARK [0][-]{chapter.2}{A little probability theory}{}% 8
+\BOOKMARK [0][-]{chapter.3}{Simple random samples}{}% 9
+\BOOKMARK [1][-]{section.3.1}{Back to probability}{chapter.3}% 10
+\BOOKMARK [1][-]{section.3.2}{Expectation}{chapter.3}% 11
+\BOOKMARK [1][-]{section.3.3}{Simple random sampling}{chapter.3}% 12
+\BOOKMARK [0][-]{chapter.4}{Some distributions}{}% 13
+\BOOKMARK [1][-]{section.4.1}{Discrete distributions}{chapter.4}% 14
+\BOOKMARK [2][-]{subsection.4.1.1}{Bernoulli distribution}{section.4.1}% 15
+\BOOKMARK [2][-]{subsection.4.1.2}{Binomial distribution}{section.4.1}% 16
+\BOOKMARK [2][-]{subsection.4.1.3}{The Poisson distribution}{section.4.1}% 17
+\BOOKMARK [2][-]{subsection.4.1.4}{Negative binomial distribution}{section.4.1}% 18
+\BOOKMARK [1][-]{section.4.2}{Continuous distributions}{chapter.4}% 19
+\BOOKMARK [2][-]{subsection.4.2.1}{The uniform distribution}{section.4.2}% 20
+\BOOKMARK [2][-]{subsection.4.2.2}{The normal distribution}{section.4.2}% 21
+\BOOKMARK [1][-]{section.4.3}{Distributions based on the normal distribution}{chapter.4}% 22
+\BOOKMARK [2][-]{subsection.4.3.1}{The 2 distribution}{section.4.3}% 23
+\BOOKMARK [2][-]{subsection.4.3.2}{The t distribution}{section.4.3}% 24
+\BOOKMARK [2][-]{subsection.4.3.3}{The F distribution}{section.4.3}% 25
+\BOOKMARK [2][-]{subsection.4.3.4}{Who cares?}{section.4.3}% 26
+\BOOKMARK [0][-]{chapter.5}{Basic Statistical Inference}{}% 27
+\BOOKMARK [1][-]{section.5.1}{Sampling distributions}{chapter.5}% 28
+\BOOKMARK [2][-]{subsection.5.1.1}{Basic principles of the central limit theorem}{section.5.1}% 29
+\BOOKMARK [1][-]{section.5.2}{The standard error of the mean}{chapter.5}% 30
+\BOOKMARK [1][-]{section.5.3}{The standard error of a proportion}{chapter.5}% 31
+\BOOKMARK [1][-]{section.5.4}{Hypothesis testing}{chapter.5}% 32
+\BOOKMARK [2][-]{subsection.5.4.1}{What is a p-value?}{section.5.4}% 33
+\BOOKMARK [2][-]{subsection.5.4.2}{Comparing two means}{section.5.4}% 34
+\BOOKMARK [0][-]{chapter.6}{Basic multivariate analyses}{}% 35
+\BOOKMARK [1][-]{section.6.1}{The analysis of variance \(ANOVA\)}{chapter.6}% 36
+\BOOKMARK [2][-]{subsection.6.1.1}{ANOVA Example}{section.6.1}% 37
+\BOOKMARK [1][-]{section.6.2}{Covariance}{chapter.6}% 38
+\BOOKMARK [1][-]{section.6.3}{Correlation}{chapter.6}% 39
+\BOOKMARK [2][-]{subsection.6.3.1}{Testing the correlation coefficient}{section.6.3}% 40
+\BOOKMARK [1][-]{section.6.4}{Chi-square}{chapter.6}% 41
+\BOOKMARK [0][-]{chapter.7}{Least squares and maximum likelihood}{}% 42
+\BOOKMARK [1][-]{section.7.1}{The mean}{chapter.7}% 43
+\BOOKMARK [2][-]{subsection.7.1.1}{Least squares}{section.7.1}% 44
+\BOOKMARK [2][-]{subsection.7.1.2}{Maximum likelihood}{section.7.1}% 45
+\BOOKMARK [1][-]{section.7.2}{The proportion via maximum likelihood}{chapter.7}% 46
+\BOOKMARK [0][-]{chapter.8}{Ordinary least squares regression}{}% 47
+\BOOKMARK [1][-]{section.8.1}{A line through the data}{chapter.8}% 48
+\BOOKMARK [1][-]{section.8.2}{The regression slope}{chapter.8}% 49
+\BOOKMARK [1][-]{section.8.3}{The intercept}{chapter.8}% 50
+\BOOKMARK [1][-]{section.8.4}{Why is this the best fitting line?}{chapter.8}% 51
+\BOOKMARK [2][-]{subsection.8.4.1}{Least squares formulation}{section.8.4}% 52
+\BOOKMARK [2][-]{subsection.8.4.2}{Maximum likelihood formulation}{section.8.4}% 53
+\BOOKMARK [0][-]{chapter.9}{Multiple regression}{}% 54
+\BOOKMARK [1][-]{section.9.1}{The matrix algebra formulation}{chapter.9}% 55
+\BOOKMARK [2][-]{subsection.9.1.1}{The matrix formulation of least squares}{section.9.1}% 56
+\BOOKMARK [2][-]{subsection.9.1.2}{The matrix formulation of maximum likelihood}{section.9.1}% 57
+\BOOKMARK [1][-]{section.9.2}{Interpretation}{chapter.9}% 58
+\BOOKMARK [1][-]{section.9.3}{Standardized coefficients}{chapter.9}% 59
+\BOOKMARK [2][-]{subsection.9.3.1}{Standardized coefficient example}{section.9.3}% 60
+\BOOKMARK [1][-]{section.9.4}{Introduction to coding and interpreting nominal predictors}{chapter.9}% 61
+\BOOKMARK [2][-]{subsection.9.4.1}{Two groups}{section.9.4}% 62
+\BOOKMARK [2][-]{subsection.9.4.2}{More than two groups}{section.9.4}% 63
+\BOOKMARK [0][-]{chapter.10}{OLS model inference and evaluation}{}% 64
+\BOOKMARK [1][-]{section.10.1}{The variance and covariance of regression coefficients}{chapter.10}% 65
+\BOOKMARK [1][-]{section.10.2}{Hypothesis testing with regression slopes}{chapter.10}% 66
+\BOOKMARK [1][-]{section.10.3}{Model fit by way of ANOVA}{chapter.10}% 67
+\BOOKMARK [1][-]{section.10.4}{Model fit by way of R2}{chapter.10}% 68
+\BOOKMARK [1][-]{section.10.5}{Testing blocks of coefficients}{chapter.10}% 69
+\BOOKMARK [1][-]{section.10.6}{Model Likelihood}{chapter.10}% 70
+\BOOKMARK [1][-]{section.10.7}{Important assumptions of OLS regression}{chapter.10}% 71
+\BOOKMARK [2][-]{subsection.10.7.1}{y is a linear function of the predictors}{section.10.7}% 72
+\BOOKMARK [2][-]{subsection.10.7.2}{The expected value of any residual is zero}{section.10.7}% 73
+\BOOKMARK [2][-]{subsection.10.7.3}{The variance of the residuals is constant}{section.10.7}% 74
+\BOOKMARK [2][-]{subsection.10.7.4}{The covariance of all residuals is zero}{section.10.7}% 75
+\BOOKMARK [2][-]{subsection.10.7.5}{The values of the predictors are not random}{section.10.7}% 76
+\BOOKMARK [2][-]{subsection.10.7.6}{The values of the predictors are not exact linear combinations of each other}{section.10.7}% 77
+\BOOKMARK [2][-]{subsection.10.7.7}{The errors are distributed normally}{section.10.7}% 78
+\BOOKMARK [0][-]{chapter.11}{Colinearity}{}% 79
+\BOOKMARK [1][-]{section.11.1}{Perfect colinearity}{chapter.11}% 80
+\BOOKMARK [1][-]{section.11.2}{Non-perfect colinearity}{chapter.11}% 81
+\BOOKMARK [2][-]{subsection.11.2.1}{The variance inflation factor}{section.11.2}% 82
+\BOOKMARK [2][-]{subsection.11.2.2}{Example with city data}{section.11.2}% 83
+\BOOKMARK [2][-]{subsection.11.2.3}{What to do?}{section.11.2}% 84
+\BOOKMARK [0][-]{chapter.12}{Outliers}{}% 85
+\BOOKMARK [1][-]{section.12.1}{Leverage}{chapter.12}% 86
+\BOOKMARK [1][-]{section.12.2}{Standardized residuals}{chapter.12}% 87
+\BOOKMARK [1][-]{section.12.3}{Studentized residuals}{chapter.12}% 88
+\BOOKMARK [1][-]{section.12.4}{DFBETA}{chapter.12}% 89
+\BOOKMARK [1][-]{section.12.5}{Cook's distance}{chapter.12}% 90
+\BOOKMARK [1][-]{section.12.6}{Dfits}{chapter.12}% 91
+\BOOKMARK [1][-]{section.12.7}{Summary}{chapter.12}% 92
+\BOOKMARK [0][-]{chapter.13}{Coding strategies}{}% 93
+\BOOKMARK [1][-]{section.13.1}{Centering}{chapter.13}% 94
+\BOOKMARK [1][-]{section.13.2}{Changing the unit}{chapter.13}% 95
+\BOOKMARK [1][-]{section.13.3}{Standardization}{chapter.13}% 96
+\BOOKMARK [1][-]{section.13.4}{Power Transformations}{chapter.13}% 97
+\BOOKMARK [2][-]{subsection.13.4.1}{Logs}{section.13.4}% 98
+\BOOKMARK [0][-]{chapter.14}{Analysis of covariance \(ANCOVA\)}{}% 99
+\BOOKMARK [1][-]{section.14.1}{The meaning of the intercept}{chapter.14}% 100
+\BOOKMARK [2][-]{subsection.14.1.1}{As-is regression}{section.14.1}% 101
+\BOOKMARK [2][-]{subsection.14.1.2}{Regression on pre-centered variables}{section.14.1}% 102
+\BOOKMARK [2][-]{subsection.14.1.3}{Regression on the difference}{section.14.1}% 103
+\BOOKMARK [2][-]{subsection.14.1.4}{Why different standard errors for centered and difference models?}{section.14.1}% 104
+\BOOKMARK [2][-]{subsection.14.1.5}{Gains in power using regression technique}{section.14.1}% 105
+\BOOKMARK [1][-]{section.14.2}{ANCOVA: Bush election opinion example}{chapter.14}% 106
+\BOOKMARK [2][-]{subsection.14.2.1}{Was there change, on average?}{section.14.2}% 107
+\BOOKMARK [2][-]{subsection.14.2.2}{As-is regression}{section.14.2}% 108
+\BOOKMARK [2][-]{subsection.14.2.3}{Regression on pre-centered data}{section.14.2}% 109
+\BOOKMARK [2][-]{subsection.14.2.4}{ANCOVA model: adding a categorical covariate}{section.14.2}% 110
+\BOOKMARK [0][-]{chapter.15}{Interactions}{}% 111
+\BOOKMARK [1][-]{section.15.1}{Interactions between categorical predictors}{chapter.15}% 112
+\BOOKMARK [2][-]{subsection.15.1.1}{Example of categorical interactions on math scores}{section.15.1}% 113
+\BOOKMARK [1][-]{section.15.2}{Interactions between a categorical and a continuous predictor}{chapter.15}% 114
+\BOOKMARK [2][-]{subsection.15.2.1}{Example of a continuous-categorical interaction on math scores}{section.15.2}% 115
+\BOOKMARK [1][-]{section.15.3}{Interactions between continuous predictors}{chapter.15}% 116
+\BOOKMARK [2][-]{subsection.15.3.1}{Example of a continuous-continuous interaction on income}{section.15.3}% 117
+\BOOKMARK [0][-]{chapter.16}{Heteroskedasticity}{}% 118
+\BOOKMARK [1][-]{section.16.1}{Why non-constant variance is a problem}{chapter.16}% 119
+\BOOKMARK [1][-]{section.16.2}{Testing for heteroskedasticity}{chapter.16}% 120
+\BOOKMARK [2][-]{subsection.16.2.1}{Breusch-Pagan example}{section.16.2}% 121
+\BOOKMARK [1][-]{section.16.3}{Robust standard errors}{chapter.16}% 122
+\BOOKMARK [2][-]{subsection.16.3.1}{Robust standard errors in matrix notation}{section.16.3}% 123
+\BOOKMARK [1][-]{section.16.4}{Generalized least squares}{chapter.16}% 124
+\BOOKMARK [2][-]{subsection.16.4.1}{Weighted least squares}{section.16.4}% 125
+\BOOKMARK [2][-]{subsection.16.4.2}{Weighted least squares in matrix form}{section.16.4}% 126
+\BOOKMARK [2][-]{subsection.16.4.3}{Feasible generalized least squares}{section.16.4}% 127
+\BOOKMARK [0][-]{chapter.17}{Generalized least squares, in general}{}% 128
+\BOOKMARK [0][-]{chapter.18}{Logistic regression}{}% 129
+\BOOKMARK [1][-]{subsection.18.0.1}{Dealing with probabilities and odds}{chapter.18}% 130
+\BOOKMARK [2][-]{subsection.18.0.2}{Estimating a regression that predicts probabilities and odds}{subsection.18.0.1}% 131
+\BOOKMARK [1][-]{section.18.1}{Introduction to maximum likelihood estimation}{chapter.18}% 132
+\BOOKMARK [2][-]{subsection.18.1.1}{Example logistic regression estimation}{section.18.1}% 133
+\BOOKMARK [2][-]{subsection.18.1.2}{Model statistics}{section.18.1}% 134
+\BOOKMARK [2][-]{subsection.18.1.3}{Variances of slopes}{section.18.1}% 135
+\BOOKMARK [1][-]{section.18.2}{Interpretation}{chapter.18}% 136
+\BOOKMARK [2][-]{subsection.18.2.1}{Example logit}{section.18.2}% 137
+\BOOKMARK [2][-]{subsection.18.2.2}{Marginal predictions}{section.18.2}% 138
+\BOOKMARK [0][-]{chapter.19}{Example Data}{}% 139
