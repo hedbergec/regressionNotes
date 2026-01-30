@@ -4,7 +4,7 @@ In many analyses we may consider that the effect of $x$ on $y$ is moderated by a
 
 \section{Interactions between categorical predictors}
 
-First, consider a model in which $y$ is a function of two categorical predictors, $x$, and $z$. Each predictor takes on two values (0 and 1). Suppose some variable $y$ was a function of both of these variables, and that these variables interacted in some way to produce effects greater than the combination of their marginal effects. That is to say, $x$ has and effect when $x=1$, $z$ has and effect when $z=1$, but when $x$ and $z$ both are 1, there is an additional effect.
+First, consider a model in which $y$ is a function of two categorical predictors, $x$, and $z$. Each predictor takes on two values (0 and 1). Suppose some variable $y$ was a function of both of these variables, and that these variables interacted in some way to produce effects greater than the combination of their marginal effects. That is to say, $x$ has an effect when $x=1$, $z$ has an effect when $z=1$, but when $x$ and $z$ both are 1, there is an additional effect.
 
 Consider Table~\ref{tab:caty}, in which I report the mean of $y$ for different values of $x$ and $z$, as well as the marginals. We can fit a model to estimate the difference between $x=0$ and $x=1$ regardless of the level of $z$:
 \[
@@ -98,15 +98,15 @@ Intercept    &   -0.355***&   -0.264** &   -0.270* &    0.449***\\
 \[
 math_i=\beta_0+\beta_1female_i+e_i
 \]
-Model 2 in presents the following model where math is a function of race:
+Model 2 presents the following model where math is a function of race:
 \[
 math_i=\beta_0+\beta_1black_i+e_i
 \]
-Model 3 in presents the following model where math is a function of gender and race:
+Model 3 presents the following model where math is a function of gender and race:
 \[
 math_i=\beta_0+\beta_1female_i+\beta_2black_i+e_i
 \]
-and Model 4 in presents the following model where math is a function of gender, race, and the interaction of gender and race:
+and Model 4 presents the following model where math is a function of gender, race, and the interaction of gender and race:
 \[
 math_i=\beta_0+\beta_1female_i+\beta_2black_i+\beta_3\left(female_i\times black_i\right)+e_i.
 \]

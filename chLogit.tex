@@ -159,7 +159,7 @@ No solution exists.
 
 \section{Introduction to maximum likelihood estimation}
 
-How can we find these parameters? We can take advantage of another problem with non-linear outcomes: the variance is dependent on the mean. For example, the variance of a binomial variable is $\mbox{var}\left(y\right)=\bar{y}\left(1-\bar{y}\right)$ or $\mbox{var}\left(p\right)=p\left(1-p\right)$. We then use the tricks we used to solve non-constant variance (see Chapter~\ref{sec:het}, weighted least squares) iteratively. In matrix notation, one procedure of {\it iterative weighted least squares} is as follows (computers do something slightly different, see Chapter~\ref{sec:chapterglm}
+How can we find these parameters? We can take advantage of another problem with non-linear outcomes: the variance is dependent on the mean. For example, the variance of a binomial variable is $\mbox{var}\left(y\right)=\bar{y}\left(1-\bar{y}\right)$ or $\mbox{var}\left(p\right)=p\left(1-p\right)$. We then use the tricks we used to solve non-constant variance (see Chapter~\ref{sec:het}, weighted least squares) iteratively. In matrix notation, one procedure of {\it iterative weighted least squares} is as follows (computers do something slightly different):
 \begin{enumerate}
 \item{start with $\beta_0$ = the mean, and $\beta_1$ = 0}
 \item{calculate weights based on the variance of the mean. In the case of a binomial outcome, the weight for each case is = $\hat{y}_i\left(1-\hat{y}_i\right)$}, where $\hat{y}_i=\frac{e^{\beta_0+\beta_1x_i}}{1+e^{\beta_0+\beta_1x_i}}$

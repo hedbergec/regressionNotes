@@ -6,7 +6,7 @@ Analysis of covariance (ANCOVA) is simply a regression with both continuous and 
 
 \section{The meaning of the intercept}
 
-Before we enter a categorical predictor, let us first example some properties of the intercept in models with paired $y$ and $x$ variables. Consider the hypothetical data in Table~\ref{tab:prepostdata}. This table has three columns, the first column is our post-test scores, the second column is our pretest scores, and the third column is the difference for reference. Since the "pre" and "post" tests are from the same units, we can compare the average change with a {\it paired} $t$-test
+Before we enter a categorical predictor, let us first examine some properties of the intercept in models with paired $y$ and $x$ variables. Consider the hypothetical data in Table~\ref{tab:prepostdata}. This table has three columns, the first column is our post-test scores, the second column is our pretest scores, and the third column is the difference for reference. Since the "pre" and "post" tests are from the same units, we can compare the average change with a {\it paired} $t$-test
 \begin{equation}
 t=\frac{\bar{d}\sqrt{N}}{s_{d}}
 \end{equation}
@@ -190,7 +190,7 @@ Looking to Model 3 in Table~\ref{tab:bushreg}, our intercept again reflects the 
   \label{fig:bushscatterc}
 \end{figure}
 
-\subsection{ANCOVA model: adding a categorical covariate}
+\subsection{ANCOVA model: adding a categorical co-variate}
 
 Now things get interesting. We can now ask ourselves if believing the election was fair influenced the impact on respondents from before to after the election. Adding in the simple covariate, a dummy variable indicating whether the respondent felt the election was fair, leads to Models 2 and 4 in Table~\ref{tab:bushreg}. In both models, the effect of believing the election was fair yields the same result, model fit, etc. However, the intercept in Model 2 would lead us to believe that there was no change for those who felt the election was not fair. However, this again reflects individuals who scored Bush as 0 on the pre score. Using the centering technique, we instead find that for a person who thought the election was unfair, but had the global average on the pretest, their opinion of Bush decreased 5.556 points. Those who believed the election was fair increased -5.556+7.733=2.177 points.
 
@@ -230,4 +230,4 @@ Sum of Squares Error     &  31091.550  &  29660.582  &  31091.549  &  29660.582 
 \multicolumn{5}{l}{$SE$s in parentheses, $*p<0.05, ***p<0.001$} \\
 \hline
 \end{tabular}
-\end{table}
+\end{table} 

@@ -7,6 +7,17 @@
 \usepackage{appendix}
 \usepackage{mathtools}
 \usepackage{hyperref}
+\usepackage{tikz}
+
+% Workaround for longtable labels
+\AtBeginDocument{%
+\newlabel{tab:rentdata}{{}{}}%
+\newlabel{tab:prepostdata}{{}{}}%
+\newlabel{tab:bushdata}{{}{}}%
+\newlabel{tab:outdata}{{}{}}%
+}
+
+
 \title{Notes on regression analysis for social research}
 \author{E. C. Hedberg \\ hedbergec@gmail.com}
 \newcommand\intro[1]{
@@ -14,15 +25,18 @@
  \markboth{\MakeUppercase{#1}}{}
  \addcontentsline{toc}{chapter}{#1}
 }
+
 \begin{document}
 \maketitle
 \tableofcontents
 \listoftables
 \listoffigures
 \intro{About}
-This document is a collection of my notes for an advanced regression course. It comes with no assurance of absolute accuracy. These notes are updated constantly and dated. NOTE: These notes are based on the work of many statisticians and social scientists, and in no way reflects my own intellectual contributions.
+This document is a collection of my notes for an advanced regression course. It comes with no assurance of absolute accuracy. These notes are updated constantly and dated.
 
-I will eventually build a bigger bibliography, but for right now these are just notes for a class. These notes are not designed to replace a proper text. ~\nocite{*}
+NOTE: These notes are based on the work of many statisticians and social scientists, and in no way reflect my own intellectual contributions.
+
+I will eventually build a larger bibliography, but for right now these are just notes for a class. These notes are not designed to replace a proper text. ~\nocite{*}
 
 I assume you have had a basic regression course and, of course, introduction to statistics. This is not about theory, and I go through the basics quickly.
 
@@ -61,8 +75,6 @@ I assume you have had a basic regression course and, of course, introduction to 
 \input{chGLS.tex}
 
 \input{chLogit.tex}
-
-\input{chExampleData.tex}
 
 \bibliographystyle{plainnat}
 \bibliography{bib}

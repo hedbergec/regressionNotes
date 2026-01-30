@@ -14,7 +14,7 @@ which is estimated by the statistic:
 \end{equation}
 In the previous paragraph, the term statistic is used. It is important to note that there are two concepts: parameters and statistics, which are often conflated by students. Frequentists generally think that the population at large can be described with parameters. For example, one parameter is the mean, or $\mu$. For example, a statistician might say that the population of objects (e.g., people) has some mean income. The statistician could then use a sample of objects to estimate this parameter. This estimate is the statistic.
 
-For example, the estimate of the population mean, $\mu$, of some variable {\it x} is the mean statistic $\bar{x}$. If the variable was {\it w}, the statistic would be $\bar{w}$. The estimate of the population variance $\sigma^2$ is the statistic $s^2$. One way to think about this is with the nemonic {\bf PPSS}: {\underline P}opulations have {\underline P}arameters, {\underline S}amples have {\underline S}tatistics.
+For example, the estimate of the population mean, $\mu$, of some variable {\it x} is the mean statistic $\bar{x}$. If the variable was {\it w}, the statistic would be $\bar{w}$. The estimate of the population variance $\sigma^2$ is the statistic $s^2$. One way to think about this is with the mnemonic {\bf PPSS}: {\underline P}opulations have {\underline P}arameters, {\underline S}amples have {\underline S}tatistics.
 
 Of course, these statistics are not going to be absolutely correct, and will vary from one sample to the next. Thus, one of the things that researchers fret most about is how well a certain statistic estimates a parameter. This is the sampling variation of that statistic, or the variance of the estimate. The square root of the variance of a statistic is the standard error. More on that later.
 \section{Deviance}
@@ -26,7 +26,7 @@ Even this basic idea has substantive interest. It is often important to know how
 \section{The sum of squares}
 It is often important to understand how much deviance there is in our sample. One method might be to add up each deviance score, but because of properties of the mean this will wind up at 0 which makes this a rather useless method. As luck would have it, there is a simple solution to this problem.
 
-By squaring each deviance, the negative values of defiance are effectively made positive (since the square of any negative number is positive) and then by adding up each squared deviance term, a measurement of total deviance is obtained. We call this total deviance the sum of squares, or $SS$:
+By squaring each deviance, the negative values of deviance are effectively made positive (since the square of any negative number is positive) and then by adding up each squared deviance term, a measurement of total deviance is obtained. We call this total deviance the sum of squares, or $SS$:
 \begin{equation}
   SS=\sum_{i=1}^{N}e_i^2={\sum_{i=1}^{N}(x_i-\bar{x})^2}.
 \end{equation}
@@ -40,7 +40,7 @@ The estimate of the population variance is the sum of squared deviations divided
 \begin{equation}
   s_x^2=\frac{{\sum_{i=1}^{N}(x_i-\bar{x})^2}}{N-1}.
 \end{equation}
-We divide by N-1 instead of N because we lose a degree of freedom since this statistic employes another statistic (the mean). This is also a correction to remove bias, since this estimate of the population variance without this correction is slightly smaller than the expected parameter.
+We divide by N-1 instead of N because we lose a degree of freedom since this statistic employs another statistic (the mean). This is also a correction to remove bias, since this estimate of the population variance without this correction is slightly smaller than the expected parameter.
 \section{The standard deviation}
 A problem with the variance is that it in units of squared deviations. To get back to simple deviations, we take the square root of the variance to get the standard deviation. In the population this is
 \begin{equation}

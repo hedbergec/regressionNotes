@@ -36,7 +36,7 @@ This gives us the "variance" of our mean estimate. All statistics have "variance
 \section{The standard error of a proportion}
 The variance of a mean is not a function of the value of the mean, it just depends on the standard deviation. In the case of proportions, the standard deviation is a function of the estimate itself:
 \begin{equation}\label{eq:pvar}
-\sigma_p=p\left(1-p\right)
+\sigma_p=\sqrt{p\left(1-p\right)}
 \end{equation}
 therefore, the standard error of the proportion is
 \begin{equation}
@@ -71,7 +71,7 @@ Can we be absolutely sure? No, because our confidence interval only covers $\lef
 
 This is all backing into hypothesis testing. We could play this game all day of calculating confidence intervals and seeing if some arbitrary value falls within the bounds. A much simpler approach is to do a hypothesis test.
 
-Most stats text books will tell you that there are 5 steps to doing a hypothesis test that include making an assertion of our Type I error we assume, stating the critical value, etc. I think these steps are silly, since no one ever does these discreetly and in that order. This is how it is done in practice.
+Most stats text books will tell you that there are 5 steps to doing a hypothesis test that include making an assertion of our Type I error we assume, stating the critical value, etc. I think these steps are silly, since no one ever does these steps in discrete order. This is how it is done in practice.
 We typically think of $\theta_{null}$ as the null hypothesis (or the value of the parameter or model we will assume to be true). We can write the null hypothesis like this (in terms of the population parameter $\theta$:
 \[
 H_0:\theta=\theta_{null}
