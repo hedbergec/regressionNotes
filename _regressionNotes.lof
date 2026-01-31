@@ -2,87 +2,92 @@
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Distributions of random binomial variables with different values of $n$ and $p$.}}{28}{figure.4.1}%
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Distributions of random Poisson variables with different values of $\lambda $.}}{28}{figure.4.2}%
-\contentsline {figure}{\numberline {4.3}{\ignorespaces A variable $x$ distributed $N \sim \left (0,1\right )$.}}{30}{figure.4.3}%
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Plot of $\chi ^2$ distribution with various degrees of freedom.}}{32}{figure.4.4}%
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Plot of the normal distribution and two $t$ distributions with various degrees of freedom}}{33}{figure.4.5}%
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Plots of $F$ distribution with various degrees of freedom combinations.}}{34}{figure.4.6}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Distributions of random binomial variables with different values of $n$ and $p$.}}{29}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Distributions of random Poisson variables with different values of $\lambda $.}}{29}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces A variable $x$ distributed $N \sim \left (0,1\right )$.}}{32}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Plot of $\chi ^2$ distribution with various degrees of freedom.}}{33}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Plot of the normal distribution and two $t$ distributions with various degrees of freedom}}{34}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Plots of $F$ distribution with various degrees of freedom combinations.}}{35}{figure.4.6}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Plot of variables $y$ and $x$ with solid lines for means, labeled with deviations from the means}}{46}{figure.6.1}%
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Covariance quadrants}}{46}{figure.6.2}%
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Plot of $t$ distribution with 8 degrees of freedom and $\alpha $ = 0.05 critical tails marked.}}{49}{figure.6.3}%
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Plot of variables $y$ and $x$ with solid lines for means, labeled with deviations from the means}}{48}{figure.6.1}%
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Covariance quadrants}}{48}{figure.6.2}%
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Plot of $t$ distribution with 8 degrees of freedom and $\alpha $ = 0.05 critical tails marked.}}{51}{figure.6.3}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {7.1}{\ignorespaces The SSE as a function of the estimate of the mean for random variable $x$.}}{55}{figure.7.1}%
-\contentsline {figure}{\numberline {7.2}{\ignorespaces The likelihood function for random variable $y$ with mean 0.27.}}{58}{figure.7.2}%
+\contentsline {figure}{\numberline {7.1}{\ignorespaces The SSE as a function of the estimate of the mean for random variable $x$.}}{57}{figure.7.1}%
+\contentsline {figure}{\numberline {7.2}{\ignorespaces The likelihood function for random variable $y$ with mean 0.27.}}{60}{figure.7.2}%
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {8.1}{\ignorespaces Data from Table~\ref {tab:xy} fit with $\hat {y}_i=\beta _0+\beta _1x_i$.}}{61}{figure.8.1}%
-\contentsline {figure}{\numberline {8.2}{\ignorespaces Data from Table~\ref {tab:xy} fit with $\hat {y}_i=\beta _0+\beta _1x_i$ marked with the value of $e_i$.}}{61}{figure.8.2}%
-\contentsline {figure}{\numberline {8.3}{\ignorespaces Alternate regression slopes and $SSE$s for data in Table~\ref {tab:xy}; real slope is 0.83.}}{66}{figure.8.3}%
-\addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {10.1}{\ignorespaces Variance of regression slopes as a function of the variance of $x$}}{84}{figure.10.1}%
-\contentsline {figure}{\numberline {10.2}{\ignorespaces The deviance of $y_i$ to $\hat {y}_i$ to $\bar {y}$}}{87}{figure.10.2}%
-\contentsline {figure}{\numberline {10.3}{\ignorespaces Data where $y$ is a linear function of $x$}}{92}{figure.10.3}%
-\contentsline {figure}{\numberline {10.4}{\ignorespaces Data where $y$ is not a linear function of $x$}}{92}{figure.10.4}%
-\contentsline {figure}{\numberline {10.5}{\ignorespaces Data where $e$ is zero on average}}{93}{figure.10.5}%
-\contentsline {figure}{\numberline {10.6}{\ignorespaces Data where $e$ is not zero on average}}{94}{figure.10.6}%
-\contentsline {figure}{\numberline {10.7}{\ignorespaces Data where $e$ does not have constant variance}}{95}{figure.10.7}%
-\contentsline {figure}{\numberline {10.8}{\ignorespaces Data $y$ as a function of a dummy variable}}{96}{figure.10.8}%
-\contentsline {figure}{\numberline {10.9}{\ignorespaces Residuals of a model for $y$ that included a dummy variable}}{97}{figure.10.9}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {11.1}{\ignorespaces Relationship between the variance inflation factor and $R^2_j$}}{100}{figure.11.1}%
-\contentsline {figure}{\numberline {11.2}{\ignorespaces Scatter matrix of variables in Table~\ref {tab:rentdata}}}{102}{figure.11.2}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {12.1}{\ignorespaces Effect of extreme value of $x$}}{106}{figure.12.1}%
-\contentsline {figure}{\numberline {12.2}{\ignorespaces Effect of extreme value of $y$}}{106}{figure.12.2}%
-\contentsline {figure}{\numberline {12.3}{\ignorespaces Outlier values by case number of typical data in Table~\ref {tab:outdata}}}{107}{figure.12.3}%
-\contentsline {figure}{\numberline {12.4}{\ignorespaces Scatter plot of data in Table~\ref {tab:outdata} ($y$ with extreme $x$) leverage values}}{108}{figure.12.4}%
-\contentsline {figure}{\numberline {12.5}{\ignorespaces Leverage values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{109}{figure.12.5}%
-\contentsline {figure}{\numberline {12.6}{\ignorespaces Leverage values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{109}{figure.12.6}%
-\contentsline {figure}{\numberline {12.7}{\ignorespaces Standardized residual values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{110}{figure.12.7}%
-\contentsline {figure}{\numberline {12.8}{\ignorespaces Standardized residual values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{111}{figure.12.8}%
-\contentsline {figure}{\numberline {12.9}{\ignorespaces Studentized residual values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{112}{figure.12.9}%
-\contentsline {figure}{\numberline {12.10}{\ignorespaces Studentized residual values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{112}{figure.12.10}%
-\contentsline {figure}{\numberline {12.11}{\ignorespaces Df-Beta values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{113}{figure.12.11}%
-\contentsline {figure}{\numberline {12.12}{\ignorespaces Df-Beta values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{113}{figure.12.12}%
-\contentsline {figure}{\numberline {12.13}{\ignorespaces Cook's distance values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{114}{figure.12.13}%
-\contentsline {figure}{\numberline {12.14}{\ignorespaces Cook's distance values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{115}{figure.12.14}%
-\contentsline {figure}{\numberline {12.15}{\ignorespaces D-fit values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{115}{figure.12.15}%
-\contentsline {figure}{\numberline {12.16}{\ignorespaces D-fit values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{116}{figure.12.16}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {13.1}{\ignorespaces Illustration of centering}}{118}{figure.13.1}%
-\contentsline {figure}{\numberline {13.2}{\ignorespaces Confidence interval of regression line}}{120}{figure.13.2}%
-\contentsline {figure}{\numberline {13.3}{\ignorespaces Models without a quadratic relationships}}{123}{figure.13.3}%
-\contentsline {figure}{\numberline {13.4}{\ignorespaces Models with a positive relationship that accelerates (left) and one that decelerates (right)}}{124}{figure.13.4}%
-\contentsline {figure}{\numberline {13.5}{\ignorespaces Models with a negative relationship that decelerates (left) and one that accelerates (right)}}{124}{figure.13.5}%
-\contentsline {figure}{\numberline {13.6}{\ignorespaces Models without a main effect but a positive quadratic relationship (left) and a negative relationship (right)}}{125}{figure.13.6}%
-\contentsline {figure}{\numberline {13.7}{\ignorespaces Quadratic relationship with tangent}}{126}{figure.13.7}%
-\contentsline {figure}{\numberline {13.8}{\ignorespaces ln($x$)}}{126}{figure.13.8}%
-\contentsline {figure}{\numberline {13.9}{\ignorespaces Distribution of charitable giving}}{127}{figure.13.9}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {14.1}{\ignorespaces Scatter plot of data in which pre and post scores are the same with solid regression line}}{133}{figure.14.1}%
-\contentsline {figure}{\numberline {14.2}{\ignorespaces Different functions for pre-post regressions}}{134}{figure.14.2}%
-\contentsline {figure}{\numberline {14.3}{\ignorespaces Scatter plot of data in Table~\ref {tab:prepostdata} with solid regression line and dashed reference lines}}{135}{figure.14.3}%
-\contentsline {figure}{\numberline {14.4}{\ignorespaces Scatter plot of data in Table~\ref {tab:bushdata} with regression line (note: small jitter added to points)}}{139}{figure.14.4}%
-\contentsline {figure}{\numberline {14.5}{\ignorespaces Scatter plot of data in Table~\ref {tab:bushdata} (centered on pre mean) with regression line (note: small jitter added to points)}}{139}{figure.14.5}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {15.1}{\ignorespaces Scatter plot of data in Table~\ref {tab:groupxy}}}{149}{figure.15.1}%
-\contentsline {figure}{\numberline {15.2}{\ignorespaces Scatter and fit plots of Models from data in Table~\ref {tab:groupxy}}}{153}{figure.15.2}%
-\contentsline {figure}{\numberline {15.3}{\ignorespaces Income as a function of education by prestige of occupation from Model 4 in Table~\ref {tab:incomeprestige}}}{158}{figure.15.3}%
-\addvspace {10\p@ }
-\contentsline {figure}{\numberline {16.1}{\ignorespaces Regression with relatively constant variance}}{161}{figure.16.1}%
-\contentsline {figure}{\numberline {16.2}{\ignorespaces Regression with non-constant variance}}{161}{figure.16.2}%
-\contentsline {figure}{\numberline {16.3}{\ignorespaces Regression of charity on income (left), residuals by fitted values (right)}}{163}{figure.16.3}%
+\contentsline {figure}{\numberline {8.1}{\ignorespaces Data from Table~\ref {tab:xy} fit with $\hat {y}_i=\beta _0+\beta _1x_i$.}}{63}{figure.8.1}%
+\contentsline {figure}{\numberline {8.2}{\ignorespaces Data from Table~\ref {tab:xy} fit with $\hat {y}_i=\beta _0+\beta _1x_i$ marked with the value of $e_i$.}}{63}{figure.8.2}%
+\contentsline {figure}{\numberline {8.3}{\ignorespaces Alternate regression slopes and $SSE$s for data in Table~\ref {tab:xy}; real slope is 0.83.}}{68}{figure.8.3}%
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {18.1}{\ignorespaces Scatterplot of data in Table~\ref {tab:logitexample}}}{177}{figure.18.1}%
-\contentsline {figure}{\numberline {18.2}{\ignorespaces Scatterplot of data in Table~\ref {tab:logitexample} with linear probability model (OLS)}}{178}{figure.18.2}%
-\contentsline {figure}{\numberline {18.3}{\ignorespaces Logit and inverse-logit functions}}{180}{figure.18.3}%
-\contentsline {figure}{\numberline {18.4}{\ignorespaces Log-likelihoods from maximum likelihood iterations to fit logistic regression to data in Table~\ref {tab:logitexample}}}{187}{figure.18.4}%
-\contentsline {figure}{\numberline {18.5}{\ignorespaces Scatterplot of data in Table~\ref {tab:logitexample} with logistic regression model}}{188}{figure.18.5}%
-\contentsline {figure}{\numberline {18.6}{\ignorespaces Variance of proportion estimator and likelihood functions for various proportions and sample sizes}}{190}{figure.18.6}%
-\contentsline {figure}{\numberline {18.7}{\ignorespaces Variance of proportion estimator and likelihood functions for various proportions and sample sample size = 100}}{191}{figure.18.7}%
-\contentsline {figure}{\numberline {18.8}{\ignorespaces Predictions of the probability of approval of Arizona law based on model in Table~\ref {tab:sb1070logit} (12 years of education, male, older population)}}{198}{figure.18.8}%
-\contentsline {figure}{\numberline {18.9}{\ignorespaces Predictions of the probability of approval of Arizona law based on model in Table~\ref {tab:sb1070logit} (16 years of education, male, older population)}}{198}{figure.18.9}%
+\contentsline {figure}{\numberline {10.1}{\ignorespaces Variance of regression slopes as a function of the variance of $x$}}{86}{figure.10.1}%
+\contentsline {figure}{\numberline {10.2}{\ignorespaces The deviance of $y_i$ to $\hat {y}_i$ to $\bar {y}$}}{89}{figure.10.2}%
+\contentsline {figure}{\numberline {10.3}{\ignorespaces Data where $y$ is a linear function of $x$}}{94}{figure.10.3}%
+\contentsline {figure}{\numberline {10.4}{\ignorespaces Data where $y$ is not a linear function of $x$}}{94}{figure.10.4}%
+\contentsline {figure}{\numberline {10.5}{\ignorespaces Data where $e$ is zero on average}}{95}{figure.10.5}%
+\contentsline {figure}{\numberline {10.6}{\ignorespaces Data where $e$ is not zero on average}}{96}{figure.10.6}%
+\contentsline {figure}{\numberline {10.7}{\ignorespaces Data where $e$ does not have constant variance}}{97}{figure.10.7}%
+\contentsline {figure}{\numberline {10.8}{\ignorespaces Data $y$ as a function of a dummy variable}}{98}{figure.10.8}%
+\contentsline {figure}{\numberline {10.9}{\ignorespaces Residuals of a model for $y$ that included a dummy variable}}{99}{figure.10.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {11.1}{\ignorespaces Relationship between the variance inflation factor and $R^2_j$}}{102}{figure.11.1}%
+\contentsline {figure}{\numberline {11.2}{\ignorespaces Scatter matrix of variables in Table~\ref {tab:rentdata}}}{104}{figure.11.2}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {12.1}{\ignorespaces Effect of extreme value of $x$}}{108}{figure.12.1}%
+\contentsline {figure}{\numberline {12.2}{\ignorespaces Effect of extreme value of $y$}}{108}{figure.12.2}%
+\contentsline {figure}{\numberline {12.3}{\ignorespaces Outlier values by case number of typical data in Table~\ref {tab:outdata}}}{109}{figure.12.3}%
+\contentsline {figure}{\numberline {12.4}{\ignorespaces Scatter plot of data in Table~\ref {tab:outdata} ($y$ with extreme $x$) leverage values}}{110}{figure.12.4}%
+\contentsline {figure}{\numberline {12.5}{\ignorespaces Leverage values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{111}{figure.12.5}%
+\contentsline {figure}{\numberline {12.6}{\ignorespaces Leverage values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{112}{figure.12.6}%
+\contentsline {figure}{\numberline {12.7}{\ignorespaces Standardized residual values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{112}{figure.12.7}%
+\contentsline {figure}{\numberline {12.8}{\ignorespaces Standardized residual values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{113}{figure.12.8}%
+\contentsline {figure}{\numberline {12.9}{\ignorespaces Studentized residual values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{114}{figure.12.9}%
+\contentsline {figure}{\numberline {12.10}{\ignorespaces Studentized residual values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{114}{figure.12.10}%
+\contentsline {figure}{\numberline {12.11}{\ignorespaces Df-Beta values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{115}{figure.12.11}%
+\contentsline {figure}{\numberline {12.12}{\ignorespaces Df-Beta values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{115}{figure.12.12}%
+\contentsline {figure}{\numberline {12.13}{\ignorespaces Cook's distance values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{116}{figure.12.13}%
+\contentsline {figure}{\numberline {12.14}{\ignorespaces Cook's distance values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{117}{figure.12.14}%
+\contentsline {figure}{\numberline {12.15}{\ignorespaces D-fit values for extreme value of $x$ by case number of data in Table~\ref {tab:outdata}}}{117}{figure.12.15}%
+\contentsline {figure}{\numberline {12.16}{\ignorespaces D-fit values for extreme value of $y$ by case number of data in Table~\ref {tab:outdata}}}{118}{figure.12.16}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {13.1}{\ignorespaces Illustration of centering}}{121}{figure.13.1}%
+\contentsline {figure}{\numberline {13.2}{\ignorespaces Confidence interval of regression line}}{123}{figure.13.2}%
+\contentsline {figure}{\numberline {13.3}{\ignorespaces Models without a quadratic relationships}}{126}{figure.13.3}%
+\contentsline {figure}{\numberline {13.4}{\ignorespaces Models with a positive relationship that accelerates (left) and one that decelerates (right)}}{127}{figure.13.4}%
+\contentsline {figure}{\numberline {13.5}{\ignorespaces Models with a negative relationship that decelerates (left) and one that accelerates (right)}}{127}{figure.13.5}%
+\contentsline {figure}{\numberline {13.6}{\ignorespaces Models without a main effect but a positive quadratic relationship (left) and a negative relationship (right)}}{128}{figure.13.6}%
+\contentsline {figure}{\numberline {13.7}{\ignorespaces Quadratic relationship with tangent}}{129}{figure.13.7}%
+\contentsline {figure}{\numberline {13.8}{\ignorespaces ln($x$)}}{129}{figure.13.8}%
+\contentsline {figure}{\numberline {13.9}{\ignorespaces Distribution of charitable giving}}{130}{figure.13.9}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {14.1}{\ignorespaces Scatter plot of data in which pre and post scores are the same with solid regression line}}{136}{figure.14.1}%
+\contentsline {figure}{\numberline {14.2}{\ignorespaces Different functions for pre-post regressions}}{137}{figure.14.2}%
+\contentsline {figure}{\numberline {14.3}{\ignorespaces Scatter plot of data in Table~\ref {tab:prepostdata} with solid regression line and dashed reference lines}}{138}{figure.14.3}%
+\contentsline {figure}{\numberline {14.4}{\ignorespaces Scatter plot of data in Table~\ref {tab:bushdata} with regression line (note: small jitter added to points)}}{142}{figure.14.4}%
+\contentsline {figure}{\numberline {14.5}{\ignorespaces Scatter plot of data in Table~\ref {tab:bushdata} (centered on pre mean) with regression line (note: small jitter added to points)}}{142}{figure.14.5}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {15.1}{\ignorespaces Scatter plot of data in Table~\ref {tab:groupxy}}}{152}{figure.15.1}%
+\contentsline {figure}{\numberline {15.2}{\ignorespaces Scatter and fit plots of Models from data in Table~\ref {tab:groupxy}}}{156}{figure.15.2}%
+\contentsline {figure}{\numberline {15.3}{\ignorespaces Income as a function of education by prestige of occupation from Model 4 in Table~\ref {tab:incomeprestige}}}{161}{figure.15.3}%
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {16.1}{\ignorespaces Regression with relatively constant variance}}{164}{figure.16.1}%
+\contentsline {figure}{\numberline {16.2}{\ignorespaces Regression with non-constant variance}}{164}{figure.16.2}%
+\contentsline {figure}{\numberline {16.3}{\ignorespaces Regression of charity on income (left), residuals by fitted values (right)}}{166}{figure.16.3}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {18.1}{\ignorespaces Scatterplot of data in Table~\ref {tab:logitexample}}}{180}{figure.18.1}%
+\contentsline {figure}{\numberline {18.2}{\ignorespaces Scatterplot of data in Table~\ref {tab:logitexample} with linear probability model (OLS)}}{181}{figure.18.2}%
+\contentsline {figure}{\numberline {18.3}{\ignorespaces Logit and inverse-logit functions}}{183}{figure.18.3}%
+\contentsline {figure}{\numberline {18.4}{\ignorespaces Log-likelihoods from maximum likelihood iterations to fit logistic regression to data in Table~\ref {tab:logitexample}}}{190}{figure.18.4}%
+\contentsline {figure}{\numberline {18.5}{\ignorespaces Scatterplot of data in Table~\ref {tab:logitexample} with logistic regression model}}{191}{figure.18.5}%
+\contentsline {figure}{\numberline {18.6}{\ignorespaces Variance of proportion estimator and likelihood functions for various proportions and sample sizes}}{193}{figure.18.6}%
+\contentsline {figure}{\numberline {18.7}{\ignorespaces Variance of proportion estimator and likelihood functions for various proportions and sample sample size = 100}}{194}{figure.18.7}%
+\contentsline {figure}{\numberline {18.8}{\ignorespaces Predictions of the probability of approval of Arizona law based on model in Table~\ref {tab:sb1070logit} (12 years of education, male, older population)}}{201}{figure.18.8}%
+\contentsline {figure}{\numberline {18.9}{\ignorespaces Predictions of the probability of approval of Arizona law based on model in Table~\ref {tab:sb1070logit} (16 years of education, male, older population)}}{201}{figure.18.9}%
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

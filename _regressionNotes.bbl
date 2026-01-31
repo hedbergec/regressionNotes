@@ -10,10 +10,10 @@ Christopher~L. Aberson.
 \newblock \emph{Applied power analysis for the behavioral sciences}.
 \newblock Routledge, 2011.
 
-\bibitem[Agresti and Finlay()]{agresti}
+\bibitem[Agresti and Finlay(2008)]{agresti}
 Alan Agresti and Barbara Finlay.
 \newblock \emph{Statistical Methods for the Social Sciences}.
-\newblock Pearson.
+\newblock Pearson, 4 edition, 2008.
 
 \bibitem[Austin(2011)]{austin2011tutorial}
 Peter~C. Austin.
@@ -23,10 +23,11 @@ Peter~C. Austin.
 \newblock \emph{Multivariate behavioral research}, 46\penalty0 (1):\penalty0
   119--151, 2011.
 
-\bibitem[Bloom()]{rd}
+\bibitem[Bloom(2012)]{rd}
 Howard~S. Bloom.
 \newblock Modern regression discontinuity analysis.
-\newblock \emph{Journal of Research on Educational Effectiveness}.
+\newblock \emph{Journal of Research on Educational Effectiveness}, 5\penalty0
+  (1):\penalty0 43--82, 2012.
 
 \bibitem[Caliendo and Kopeinig(2008)]{caliendo2008some}
 Marco Caliendo and Sabine Kopeinig.
@@ -70,10 +71,10 @@ Ronald~Aylmer Fisher and J~Henry Bennett.
   inference}.
 \newblock Oxford University Press, 1973.
 
-\bibitem[Fox()]{fox}
+\bibitem[Fox(2008)]{fox}
 John Fox.
 \newblock \emph{Applied Regression Analysis and Generalized Linear Models}.
-\newblock Sage.
+\newblock Sage, 2 edition, 2008.
 
 \bibitem[Freedman(2009)]{freedman2009statistical}
 David Freedman.
@@ -101,10 +102,10 @@ Harvey Goldstein, William Browne, and Jon Rasbash.
 William~E. Griffiths, R.~Carter Hill, and George~G. Judge.
 \newblock Learning and practicing econometrics, 1993.
 
-\bibitem[Hill et~al.()Hill, Griffiths, and Lim]{hill}
+\bibitem[Hill et~al.(2011)Hill, Griffiths, and Lim]{hill}
 R.~Carter Hill, William~E. Griffiths, and Guay~C. Lim.
 \newblock \emph{Principles of Econometrics}.
-\newblock Wiley.
+\newblock Wiley, 4 edition, 2011.
 
 \bibitem[Imbens(2004)]{imbens2004}
 Guido~W Imbens.
@@ -143,15 +144,15 @@ Roderick~J Little and Donald~B Rubin.
 \newblock \emph{Annual review of public health}, 21\penalty0 (1):\penalty0
   121--145, 2000.
 
-\bibitem[Lord({\natexlab{a}})]{lord67}
+\bibitem[Lord(1967)]{lord67}
 F.~M. Lord.
 \newblock A paradox in the interpretations of group comparisons.
-\newblock \emph{Psychological Bulletin}, {\natexlab{a}}.
+\newblock \emph{Psychological Bulletin}, 68:\penalty0 304--305, 1967.
 
-\bibitem[Lord({\natexlab{b}})]{lord69}
+\bibitem[Lord(1969)]{lord69}
 F.~M. Lord.
 \newblock Statistical adjustments when comparing preexisting groups.
-\newblock \emph{Psychological Bulletin}, {\natexlab{b}}.
+\newblock \emph{Psychological Bulletin}, 72:\penalty0 336--337, 1969.
 
 \bibitem[Lyles et~al.(2007)Lyles, Lin, and Williamson]{lyles2007practical}
 Robert~H Lyles, Hung-Mo Lin, and John~M Williamson.
@@ -166,10 +167,10 @@ Scott~E Maxwell, Ken Kelley, and Joseph~R Rausch.
   estimation.
 \newblock \emph{Annu. Rev. Psychol.}, 59:\penalty0 537--563, 2008.
 
-\bibitem[McCulloch et~al.()McCulloch, Searle, , and Neuhaus]{glm}
-Charles~E. McCulloch, Shayle~R. Searle, , and John~M. Neuhaus.
+\bibitem[McCulloch et~al.(2008)McCulloch, Searle, and Neuhaus]{glm}
+Charles~E. McCulloch, Shayle~R. Searle, and John~M. Neuhaus.
 \newblock \emph{Generalized, Linear, and Mixed Models}.
-\newblock Wiley.
+\newblock Wiley Series in Probability and Statistics. Wiley, 2008.
 
 \bibitem[Meyer(1995)]{meyer1995natural}
 Breed~D. Meyer.
@@ -177,11 +178,12 @@ Breed~D. Meyer.
 \newblock \emph{Journal of business \& economic statistics}, 13\penalty0
   (2):\penalty0 151--161, 1995.
 
-\bibitem[Raudenbush and Bryk()]{hlm}
+\bibitem[Raudenbush and Bryk(2001)]{hlm}
 Stephen~W. Raudenbush and Anthony Bryk.
 \newblock \emph{Hierarchical Linear Models: Applications and Data Analysis
   Methods}.
-\newblock Sage.
+\newblock Advanced Quantitative Techniques in the Social Sciences. Sage, 2
+  edition, 2001.
 
 \bibitem[Rice(2007)]{rice2007mathematical}
 John~A Rice.
@@ -214,11 +216,11 @@ Donald~B. Rubin.
 \newblock \emph{Journal of the American Statistical Association}, 100\penalty0
   (469):\penalty0 322--331, 2005.
 
-\bibitem[Shadish et~al.()Shadish, Cook, and Campbell]{qed}
+\bibitem[Shadish et~al.(2001)Shadish, Cook, and Campbell]{qed}
 William~R. Shadish, Thomas~D. Cook, and Donald~T. Campbell.
 \newblock \emph{Experimental and Quasi-Experimental Designs for Generalized
   Causal Inference}.
-\newblock Cengage Learning.
+\newblock Cengage Learning, 2 edition, 2001.
 
 \bibitem[Spybrook et~al.(2006)Spybrook, Raudenbush, Liu, Congdon, and
   Mart{\'\i}nez]{spybrook2006optimal}

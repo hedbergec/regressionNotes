@@ -9,18 +9,9 @@
 \usepackage{hyperref}
 \usepackage{tikz}
 
-% Workaround for longtable labels
-\AtBeginDocument{%
-\newlabel{tab:rentdata}{{}{}}%
-\newlabel{tab:prepostdata}{{}{}}%
-\newlabel{tab:bushdata}{{}{}}%
-\newlabel{tab:outdata}{{}{}}%
-}
-
-
 \title{Notes on regression analysis for social research}
 \author{E. C. Hedberg \\ hedbergec@gmail.com}
-\date{}
+\date{\today}
 \newcommand\intro[1]{
  \chapter*{#1}
  \markboth{\MakeUppercase{#1}}{}
@@ -63,6 +54,8 @@ I assume you have had a basic regression course and, of course, introduction to 
 
 \input{chColin.tex}
 
+
+
 \input{chOut.tex}
 
 \input{chCoding.tex}
@@ -76,6 +69,12 @@ I assume you have had a basic regression course and, of course, introduction to 
 \input{chGLS.tex}
 
 \input{chLogit.tex}
+
+\input{chExampleData.tex}
+\input{chDataRent.tex}
+\input{chDataOutlier.tex}
+\input{chDataPrePost.tex}
+\input{chDataBush.tex}
 
 \bibliographystyle{plainnat}
 \bibliography{bib}

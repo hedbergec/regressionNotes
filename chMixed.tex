@@ -1,4 +1,4 @@
-\chapter{Mixed models (a.k.a. Hierarchical Linear Models or HLM)}
+\chapter{Mixed models (a.k.a. Hierarchical Linear Models or HLM)}\citep{hlm}
 
 \section{Fixed and random effects}
 
@@ -1088,7 +1088,8 @@ Log-likelihood 	&		 -70521.614 \\
 
 OK, here are the results. First, let's look at the fixed intercept effect. If a child's parents have a high school education, because we centered our predictor on 12 years, the average of the school averages for children is a score of about 33. Next, looking at the fixed effect for parental education, we see that for each year greater than high school, this value increases by almost a point and a half. Given these effects, the variance of the level 2 deviations from the intercept is now about 17 and a half, and the variance of the within-group residuals is about 106. It is worth noting that adding this one covariate has reduced the random variance at each level.
 
-
+\section*{For more information}
+For comprehensive treatment of mixed and hierarchical linear models, see \citep{hlm}. For discussions of variance components and centering strategies in multilevel modeling, consult \citep{fox}. Additional perspectives on causal inference in clustered data contexts can be found in \citep{kenny1975quasi} and \citep{cameron2005microeconometrics}.
 
 \subsection{Centering}
 \subsubsection{Grand mean centering}

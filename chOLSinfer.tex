@@ -1,4 +1,4 @@
-\chapter{OLS model inference and evaluation}
+\chapter{OLS model inference and evaluation}\citep{fox}
 So now we know how to get slopes and the intercept. Now we need to get a handle on whether we can conclude anything substantive about them. There are two aspects to model evaluation: hypothesis tests of coefficients and evaluating model fit. These topics are of course connected and we see that when we test blocks of coefficients.
 
 Let us consider, again, a model where wages are a function of education and other variables. In Tables~\ref{tab:wagesum} and~\ref{tab:wagereg} I referenced a dataset of 200 observations with three variables: hourly wages ("wage"), years of education ("edu"), and age. Table~\ref{tab:wagereg_all} displays three different models. The first model is simply
@@ -314,4 +314,7 @@ For example, consider a model a continuous predictor $x$ and another dichotomous
   \label{fig:dummyhist_r}
 \end{figure}
 
-However, sometimes there is no way to achieve normal errors. Situations in which the outcome is dichotomous or a count variable with a large proportion of zeros will never produce normally distributed outcomes. In those situations we need to use generalized linear models (GLMs). 
+However, sometimes there is no way to achieve normal errors. Situations in which the outcome is dichotomous or a count variable with a large proportion of zeros will never produce normally distributed outcomes. In those situations we need to use generalized linear models (GLMs).
+
+\section*{For more information}
+For OLS regression inference and diagnostics, see \citep{fox}. For model evaluation and diagnostics, consult \citep{hill}. Power analysis for regression is covered in \citep{cohen1988statistical} and \citep{maxwell2008sample}.

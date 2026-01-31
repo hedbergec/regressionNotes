@@ -3,107 +3,46 @@ Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
 The top-level auxiliary file: _regressionNotes.aux
 The style file: plainnat.bst
 Database file #1: bib.bib
-You're missing a field name---line 249 of file bib.bib
- :     
- :     %series   = {Wiley Series in Probability and Statistics},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 256 of file bib.bib
- :     
- :     %edition  = {4},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 263 of file bib.bib
- :     
- :     %edition  = {4},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 270 of file bib.bib
- :     
- :     %series   = {Advanced Quantitative Techniques in the Social Sciences},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 278 of file bib.bib
- :     
- :     %edition  = {2},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 285 of file bib.bib
- :     
- :     %edition  = {2},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 298 of file bib.bib
- :     
- :     %volume   = {5},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 307 of file bib.bib
- :     
- :     %volume   = {68},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-You're missing a field name---line 315 of file bib.bib
- :     
- :     %volume   = {72},
-(Error may have been on previous line)
-I'm skipping whatever remains of this entry
-Warning--empty year in agresti
-Warning--empty year in agresti
-Warning--empty year in rd
-Warning--empty year in rd
 Warning--there's a number but no series in eliason1993maximum
-Warning--empty year in fox
-Warning--empty year in fox
-Warning--empty year in hill
-Warning--empty year in hill
-Warning--empty year in lord67
-Warning--empty year in lord69
-Warning--empty year in glm
-Warning--empty year in glm
-Warning--empty year in hlm
-Warning--empty year in hlm
-Warning--empty year in qed
-Warning--empty year in qed
 You've used 39 entries,
             2773 wiz_defined-function locations,
-            808 strings with 10499 characters,
-and the built_in function-call counts, 15101 in all, are:
-= -- 1293
-> -- 713
+            818 strings with 10627 characters,
+and the built_in function-call counts, 15298 in all, are:
+= -- 1340
+> -- 704
 < -- 32
-+ -- 252
-- -- 212
-* -- 1116
-:= -- 2357
-add.period$ -- 118
++ -- 248
+- -- 209
+* -- 1126
+:= -- 2391
+add.period$ -- 120
 call.type$ -- 39
-change.case$ -- 172
-chr.to.int$ -- 38
-cite$ -- 95
-duplicate$ -- 793
-empty$ -- 1392
-format.name$ -- 269
-if$ -- 3138
-int.to.chr$ -- 2
+change.case$ -- 176
+chr.to.int$ -- 39
+cite$ -- 79
+duplicate$ -- 796
+empty$ -- 1418
+format.name$ -- 266
+if$ -- 3208
+int.to.chr$ -- 1
 int.to.str$ -- 1
 missing$ -- 53
 newline$ -- 202
 num.names$ -- 158
-pop$ -- 448
+pop$ -- 394
 preamble$ -- 1
-purify$ -- 148
+purify$ -- 147
 quote$ -- 0
-skip$ -- 520
+skip$ -- 552
 stack$ -- 0
-substring$ -- 477
-swap$ -- 51
+substring$ -- 534
+swap$ -- 49
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 354
-warning$ -- 17
-while$ -- 151
+warning$ -- 1
+while$ -- 154
 width$ -- 0
-write$ -- 487
-(There were 9 error messages)
+write$ -- 504
+(There was 1 warning)

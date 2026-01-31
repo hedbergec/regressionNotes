@@ -14,7 +14,3 @@ duction to statistics. This is not about theory, and I go through the basics
 quickly.
 
 More topics will be completed and added to the document over time.
-
-# To fix
-
-5.3, needs to be the square root of p(1-p)

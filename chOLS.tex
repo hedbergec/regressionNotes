@@ -1,6 +1,6 @@
 
 
-\chapter{Ordinary least squares regression}
+\chapter{Ordinary least squares regression}\citep{fox}
 \section{A line through the data}
 Let's assume that a researcher wants to understand the relationship between two variables, $x$ and $y$, using a geometric line. Recall that a simple two dimensional line has two parameters, and intercept and a slope. In these notes, I call the intercept $\beta_0$ and the slope $\beta_1$ to form the function
 \begin{equation}
@@ -163,3 +163,6 @@ and replace the mean with the regression formula
 and now we need to find the partial derivatives of this function, which look a lot like the least squares formulations. I won't do that all again, but hopefully you see that taking the derivatives of this function will produce the exact same estimators.  Thus, in this case, the least squares estimators are also the maximum likelihood estimators.
 
 However, the only reason this works is because we assume a normal distribution. That is one of the assumptions of least squares: a normally distributed set of residuals. If that is not the case, then the maximum likelihood estimator will be different altogether, and then the least squares estimators will no longer be valid.
+
+\section*{For more information}
+For comprehensive treatment of ordinary least squares regression, see \citep{fox} and \citep{hill}. For maximum likelihood estimation foundations, consult \citep{eliason1993maximum}. Mathematical approaches can be found in \citep{gill2006essential} and \citep{freedman2009statistical}.

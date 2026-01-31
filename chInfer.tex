@@ -1,4 +1,4 @@
-\chapter{Basic Statistical Inference}
+\chapter{Basic Statistical Inference}\citep{cohen1988statistical}
 \label{sec:inference}
 \section{Sampling distributions}
 Almost all the methods in these notes assume a simple random sample. {\bf If it is not a simple random sample, such as a two-stage cluster randomized sample from a major survey, these notes do not apply.} While the population mean, $\mu$, is fixed, the estimation of the mean, $\bar{x}$, is random because the selection of the sample is random. It therefore makes sense that if we were to gather another sample, that new sample's estimation of the mean will be different. This is the idea of sampling distributions: given a large number of samples, how will the estimate likely vary? What would the range of our estimate be 95 percent of the time?
@@ -34,13 +34,18 @@ SE\left(\bar{x}\right) = \frac{s}{\sqrt{N}}
 This gives us the "variance" of our mean estimate. All statistics have "variances" associated with them. Much of the more advanced statistics and sample statistics that are taught in graduate schools focus on getting the right variances, and thus the right standard errors. Much the time, the formulas of the point estimates (the statistics) are pretty much the same.
 
 \section{The standard error of a proportion}
-The variance of a mean is not a function of the value of the mean, it just depends on the standard deviation. In the case of proportions, the standard deviation is a function of the estimate itself:
-\begin{equation}\label{eq:pvar}
-\sigma_p=\sqrt{p\left(1-p\right)}
+The variance of a mean for linear variables is not direct a function of the value of the mean, it just depends on the standard deviation. In the case of proportions, the variance is a function of the estimate itself:
+\begin{equation}\label{eq:par}
+\sigma^2_p=p\left(1-p\right)
 \end{equation}
-therefore, the standard error of the proportion is
+This is true because if $p$ is the mean and $x_i$ only takes on values of 0 or 1, then $Np$ is the number of observations in which $x_i=1$ and $N\left(1-p\right)$ is the number of observations in which $x_i=0$. Thus, the variance (without the sample correction of $N-1$ for $N$) can be calculated as
 \begin{equation}
-SE\left(p\right) = \sqrt{\frac{p\left(1-p\right)}{N}}
+s^2 = \frac{\sum_{i=1}^N\left(x_i - p\right)^2}{N} = \frac{Np\left(1-p\right)^2 + N\left(1-p\right)p^2}{N} = \frac{Np\left(1-p\right)}{N} = p\left(1-p\right)
+\end{equation}
+What is calculated by computers is this times $\frac{N}{N-1}$ to get an unbiased estimate of the population variance, but for large $N$ this is close to 1.
+So, the standard error of the proportion is a function of the proportion itself:
+\begin{equation}
+SE\left(p\right) = \sqrt{\frac{N}{N-1}\times\frac{p\left(1-p\right)}{N}}
 \end{equation}
 \section{Hypothesis testing}
 So now that we have an estimate of the mean, and a sense of our uncertainty about this estimate, we can now ask a theoretical question: let's say we did draw several samples from the population, what is the range for 95 percent of the means we would get? We can do this by calculating a confidence interval of the estimated statistic. Confidence intervals generally take the form of
@@ -61,7 +66,7 @@ SE\left(\bar{x}\right) = \frac{s}{\sqrt{N}}
 \end{equation}
 we see that the denominator is essentially the sample size. Smaller samples, larger standard errors. The second reason is that we use the sample size to determine the degrees of freedom when selecting the value from the $t$ distribution. Smaller samples, larger values of $t$ for any given $\alpha$.
 
-Why do we care about this? We care because we may want to make an assertion that the estimated parameter, $\hat{\theta}$, is different from some other value, $\theta_{null}$. If $\theta_{null}$ is outside the confidence interval, then the estimate is statistically different. Another way is to find the difference between $\hat{\theta}$ and $\theta_{null}$, and divide by $SE\left(hat{\theta}\right)$. This gives you the value of $t$ for a confidence interval, and you can compare it to the $t$ you would use to construct a confidence interval, or the critical $t$. If
+Why do we care about this? We care because we may want to make an assertion that the estimated parameter, $\hat{\theta}$, is different from some other value, $\theta_{null}$. If $\theta_{null}$ is outside the confidence interval, then the estimate is statistically different. Another way is to find the difference between $\hat{\theta}$ and $\theta_{null}$, and divide by $SE\left(\hat{\theta}\right)$. This gives you the value of $t$ for a confidence interval, and you can compare it to the $t$ you would use to construct a confidence interval, or the critical $t$. If
 \begin{equation}
 \frac{\hat{\theta}-\theta_{null}}{SE\left(\hat{\theta}\right)}>t_{critical, df, \alpha/2}
 \end{equation}
@@ -151,3 +156,6 @@ and
 s_d = \sqrt{\frac{\sum_{i=1}^N\left(\left(y_{Ai}-y_{Bi}\right)-\bar{d}\right)^2}{N-1}}
 \end{equation}
 with $N$ pairs of values. The test is then evaluated against the $t$ distribution using $N-1$ degrees of freedom.
+
+\section*{For more information}
+For statistical power analysis, see \citep{cohen1988statistical} and \citep{aberson2011applied}. For sample size planning, consult \citep{maxwell2008sample}. Foundational material on statistical inference can be found in \citep{rice2007mathematical} and \citep{agresti}.

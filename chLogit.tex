@@ -1,5 +1,5 @@
 
-\chapter{Logistic regression}
+\chapter{Logistic regression}\citep{glm}
 \label{sec:logit}
 Generalized linear models, of which the logit is one, form a large branch of statistical models that seek to use many of the tools of linear regression on dependent variables that do not meet the requirements of OLS regression; namely linearity and normality.
 
@@ -392,7 +392,7 @@ Not significant. Unlike OLS regression, the test of the significance for model f
 
 Without getting {\it too} technical, the variance of the slopes is related to the curvature of the likelihood function at the end of the iterations. In other words, it is related to how "flat" the function is at that point. When it is very flat, the estimates are uncertain and the standard errors are large. If it less flat, and more of a tip, the estimate is precise, and the standard errors are small. The mechanics of how this works is a little beyond the scope of these notes, but the foregoing discussion should shed some intuitive light.
 
-If you compare Figure~\ref{fig:iteration} with Figure~\ref{fig:ll}, you will notice that the plot of iterations looks very similar to the left portion of the likelihood function. How "flat" this region is when the iteration stops is what drives the standard errors. To better understand this, recall that the variance of a proportion is ~\eqref{eq:pvar}
+If you compare Figure~\ref{fig:iteration} with Figure~\ref{fig:ll}, you will notice that the plot of iterations looks very similar to the left portion of the likelihood function. How "flat" this region is when the iteration stops is what drives the standard errors. To better understand this, recall that the variance of a proportion is ~\eqref{eq:par}
 \[
 \mbox{var}\left(p\right) = \frac{p\left(1-p\right)}{N}
 \]
@@ -609,3 +609,6 @@ Next, we alter another parameter and reevaluate these marginal changes. For each
    \caption{Predictions of the probability of approval of Arizona law based on model in Table~\ref{tab:sb1070logit} (16 years of education, male, older population)}
   \label{fig:sb1070col}
 \end{figure}
+
+\section*{For more information}
+For logistic regression and generalized linear models, see \citep{glm}, \citep{fox}, and \citep{agresti}. For maximum likelihood estimation, consult \citep{eliason1993maximum}. For power analysis in GLMs, see \citep{vaeth2004simple} and \citep{lyles2007practical}.

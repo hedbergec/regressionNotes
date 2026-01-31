@@ -1,6 +1,6 @@
 
 
-\chapter{Colinearity}
+\chapter{Colinearity}\citep{fox}
 
 Colinearity among predictors is an interesting problem in regression. From one point of view, it is a scourge that reduces the precision of estimates and can make our coefficients unstable. From another point of view, it is the reason we perform multiple regression in the first place. The following offers an explicit example of the problem. Note, however, the actual issue is often less obvious.
 
@@ -137,4 +137,7 @@ There are essentially two things you can do to solve colinearity:
 This is essentially what we did in Models 2 and 3 in Table~\ref{tab:rentmodel}. Since we can make the argument that both income variables are essentially measuring the same thing, we just pick one and be done with it.
 
 \subsubsection{Combine variables}
-The other option is to use factor analysis (which is beyond the scope of these notes for now) to create a common factor score that combines the information from the predictors which are highly correlated. 
+The other option is to use factor analysis (which is beyond the scope of these notes for now) to create a common factor score that combines the information from the predictors which are highly correlated.
+
+\section*{For more information}
+For treatment of multicollinearity in regression, see \citep{fox} and \citep{hill}. For comprehensive regression analysis, consult \citep{agresti} and \citep{cameron2005microeconometrics}.

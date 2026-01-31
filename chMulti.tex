@@ -182,3 +182,6 @@ A big value for this number tells us that there is a difference between our data
 m_{ij}=\frac{n_{i+}n_{+j}}{N}
 \end{equation}
 So, what's a big value? In this case, it depends on how many cells are in the table. Any statistical test is compared to a function, generally based on some degrees of freedom. For example, a Chi-square test is compared against a Chi-square distribution with $\left(rows-1\right)\left(columns-1\right)$ degrees of freedom. If the value of the test is far enough along that distribution to be considered unlikely if the expectation is true, then we reject the expectation. For example, a $2\times2$ table has a single degree of freedom and a critical value of 3.84 for a Type I error rate of 0.05. Figure~\ref{fig:chi} display some $\chi^2$ distributions.
+
+\section*{For more information}
+For comprehensive treatment of chi-square tests and categorical data analysis, see \citep{agresti}. For discussion of association measures and categorical independence testing, consult \citep{rice2007mathematical}. Additional perspectives on multivariate categorical analyses can be found in \citep{cameron2005microeconometrics}.
