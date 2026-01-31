@@ -38,9 +38,9 @@ The variance of a mean for linear variables is not direct a function of the valu
 \begin{equation}\label{eq:par}
 \sigma^2_p=p\left(1-p\right)
 \end{equation}
-This is true because if $p$ is the mean and $x_i$ only takes on values of 0 or 1, then $Np$ is the number of observations in which $x_i=1$ and $N\left(1-p\right)$ is the number of observations in which $x_i=0$. Thus, the variance (without the sample correction of $N-1$ for $N$) can be calculated as
+This is true because if $p$ is the mean and $x_i$ only takes on values of 0 or 1, then $Np$ is the number of observations in which $x_i=1$ and $N\left(1-p\right)$ is the number of observations in which $x_i=0$. Thus, the variance can be calculated as
 \begin{equation}
-s^2 = \frac{\sum_{i=1}^N\left(x_i - p\right)^2}{N} = \frac{Np\left(1-p\right)^2 + N\left(1-p\right)p^2}{N} = \frac{Np\left(1-p\right)}{N} = p\left(1-p\right)
+\sigma^2_p = \frac{\sum_{i=1}^N\left(x_i - p\right)^2}{N} = \frac{Np\left(1-p\right)^2 + N\left(1-p\right)p^2}{N} = \frac{Np\left(1-p\right)}{N} = p\left(1-p\right)
 \end{equation}
 What is calculated by computers is this times $\frac{N}{N-1}$ to get an unbiased estimate of the population variance, but for large $N$ this is close to 1.
 So, the standard error of the proportion is a function of the proportion itself:
