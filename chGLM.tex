@@ -14,7 +14,7 @@ First, let's consider a PMF or PDF (remember these from sections~\ref{sec:disdis
 \begin{equation}
 f\left(z|\zeta\right)=\mbox{exp}\left[t\left(z\right)u\left(\zeta\right)+\mbox{ln}\left(r\left(z\right)\right)+\mbox{ln}\left(s\left(\zeta\right)\right)\right]
 \end{equation}
-In this function, $r$ and $t$ are functions independent of $z$ and $s$ and $u$ are functions that do not depend on $\zeta$. The interaction component is $t\left(z\right)u\left(\zeta\right)$ and the additive component is $\mbox{ln}\left(r\left(z\right)\right)+\mbox{ln}\left(s\left(\zeta\right)\right)$. Assuming independent observations, the joint density function for a set of observations {\bf z} is also in this form
+In this function, $r$ and $t$ are functions of $z$ and $s$ and $u$ are functions of $\zeta$. The interaction component is $t\left(z\right)u\left(\zeta\right)$ and the additive component is $\mbox{ln}\left(r\left(z\right)\right)+\mbox{ln}\left(s\left(\zeta\right)\right)$. Assuming independent observations, the joint density function for a set of observations {\bf z} is also in this form
 \begin{equation}
 f\left({\bf z}|\zeta\right)=\mbox{exp}\left[ u\left(\zeta\right) \sum_{i=1}^{N}t\left(z_i\right)+\sum_{i=1}^N\mbox{ln}\left(r\left(z_i\right)\right)+N\mbox{ln}\left(s\left(\zeta\right)\right)\right]
 \end{equation}
@@ -103,7 +103,7 @@ which is an easy function to deal with.
 
 We now start with the first derivative of the likelihood function with respect to the $\theta$ parameter. Fisher termed this the score function,
 \begin{equation}
-\mbox{ln}\left(L\left(\theta|\psi,{\bf y}\right)\right)=\frac{\partial}{\partial\theta}\left[\frac{y\theta-b\left(\theta\right)}{a\left(\psi\right)}+c\left(y,\psi\right)
+\frac{\partial\mbox{ln}\left(L\left(\theta|\psi,{\bf y}\right)\right)}{\partial\theta}=\frac{\partial}{\partial\theta}\left[\frac{y\theta-b\left(\theta\right)}{a\left(\psi\right)}+c\left(y,\psi\right)
 \right]=\frac{{\bf y}-\left(\frac{\partial}{\partial\theta}\right)b\left(\theta\right)}{a\left(\psi\right)}
 \end{equation}
 If we know the $b$ function for $\theta$, we can set this derivative to 0 and solve for $theta$ to get the maximum likelihood estimate, just as we did for the mean or proportion (e.g., section~\ref{sec:mean}). The big news here is that the first moment, the mean, is just the first derivative of the $b\left(\theta\right)$ function with respect to $\theta$

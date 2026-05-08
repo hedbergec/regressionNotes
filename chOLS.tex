@@ -15,7 +15,7 @@ Figure~\ref{fig:fit} is an example line. Note the hat above $y$ again, this lets
   \label{fig:fit}
 \end{figure}
 \begin{equation}
-e_i=y_i-\hat{y}_i=y_i-\beta_0+\beta_1x_i
+e_i=y_i-\hat{y}_i=y_i-\beta_0-\beta_1x_i
 \end{equation}
 It is also a deviation. Thus, the expression for the observed $y$ that includes the elements of the line is
 \begin{equation}
@@ -80,7 +80,7 @@ and putting the elements back into the sum
 \end{equation}
 and the partial derivative of $\beta_1$ (the other normal equation)
 \[
-\frac{\partial S}{\partial \beta_1}=2\beta_0\sum_{i=1}^Nx_i+2\beta_1\sum_{i=1}^N-2\sum_{i=1}^Ny_ix_i
+\frac{\partial S}{\partial \beta_1}=2\beta_0\sum_{i=1}^Nx_i+2\beta_1\sum_{i=1}^Nx_i^2-2\sum_{i=1}^Ny_ix_i
 \]
 and putting the elements back into the sum
 \begin{equation}
@@ -154,11 +154,11 @@ What we find is that no matter what slope I use, I can't do better than the form
 
 Another way to get to these estimates is to consider the likelihood of observing the data given the parameters. Since the predicted value $y$ is a conditional mean, we can start with the likelihood function of the mean
 \begin{equation}
-\mbox{ln}\left(L\left(\mu\vert y_1\ldots y_N\right)\right)=-\frac{1}{2}\sum_{i=1}^N\left(y_i-\mu\right)^2-\frac{N}{2}\left(\mbox{ln}\left(\sqrt{2\pi}\right)\right)
+\mbox{ln}\left(L\left(\mu,\sigma^2\vert y_1\ldots y_N\right)\right)=-\frac{N}{2}\mbox{ln}\left(2\pi\sigma^2\right)-\frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i-\mu\right)^2
 \end{equation}
 and replace the mean with the regression formula
 \begin{equation}
-\mbox{ln}\left(L\left(\beta_0,\beta_1 \vert y_1\ldots y_N\right)\right)=-\frac{1}{2}\sum_{i=1}^N\left(y_i-\beta_0-\beta_1x_i\right)^2-\frac{N}{2}\left(\mbox{ln}\left(\sqrt{2\pi}\right)\right)
+\mbox{ln}\left(L\left(\beta_0,\beta_1,\sigma^2 \vert y_1\ldots y_N\right)\right)=-\frac{N}{2}\mbox{ln}\left(2\pi\sigma^2\right)-\frac{1}{2\sigma^2}\sum_{i=1}^N\left(y_i-\beta_0-\beta_1x_i\right)^2
 \end{equation}
 and now we need to find the partial derivatives of this function, which look a lot like the least squares formulations. I won't do that all again, but hopefully you see that taking the derivatives of this function will produce the exact same estimators.  Thus, in this case, the least squares estimators are also the maximum likelihood estimators.
 

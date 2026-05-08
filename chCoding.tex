@@ -59,7 +59,7 @@ We now move to Model 2, where we have centered age. Now the intercept tells us t
 
 The standard error of the intercept gets smaller because the variance of any predicted value is always lowest at the mean. The reason for this is because the variance of any predicted value of $y$ based on some value of $x$, say $x_0$, is equation~\eqref{eq:varfit}
 \[
-\mbox{var}\left(\hat{y}_0\right)=\left(\frac{\sigma^2}{N}+\frac{\left(x_0-\bar{x}\right)^2\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2}\right)\sigma^2
+\mbox{var}\left(\hat{y}_0\right)=\frac{\sigma^2}{N}+\frac{\left(x_0-\bar{x}\right)^2\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2}
 \]
 and that fraction to the right gets smaller the closer the value is to the mean of $x$. This gets reflected in the smaller standard error of the intercept.
 \begin{figure}
@@ -319,7 +319,7 @@ The final use of log-transformations in OLS regression is when both dependent an
 
 In this model, both the outcome and predictor is transformed to the natural log. This produces an elasticity. Thus, coefficient tells us the percent ({\it not proportion}) change in the outcome based on a 1 {\it percent} change in the predictor. Here, we see that giving changes by 0.730 percent, for each percentage change in the predictor. Here is a walk-through on how this works.
 
-Table~\ref{tab:charitydes} gives the means for our variables, both the unaltered version and the natural log version. From Table~\ref{tab:charity}, we can find that the dollar amount for the mean natural log of giving is $e^{6.543}=694.37$ dollars. The mean natural log of income is 4.02, which translates into an amount of $e^{4.02}=55.70$ thousand dollars. A 1 percent increase of 55.70 thousand dollars is $1.01\times55.70 = 56.26$ thousand dollars, of which the natural log is 4.03. Thus, a 1 percent increase in the natural log of income is 0.01. Plugging this into the model, our predicted natural log of giving is $6.543+0.730\left(0.01\right)=6.550$, the exponent of which is 699.45. $\left(699.45 - 694.37\right)/694.37=0.01$, or a 1 percent increase.
+Table~\ref{tab:charitydes} gives the means for our variables, both the unaltered version and the natural log version. From Table~\ref{tab:charity}, we can find that the dollar amount for the mean natural log of giving is $e^{6.543}=694.37$ dollars. The mean natural log of income is 4.02, which translates into an amount of $e^{4.02}=55.70$ thousand dollars. A 1 percent increase of 55.70 thousand dollars is $1.01\times55.70 = 56.26$ thousand dollars, of which the natural log is 4.03. Thus, a 1 percent increase in income is approximately a 0.01 increase in the natural log of income. Plugging this into the model, our predicted natural log of giving is $6.543+0.730\left(0.01\right)=6.550$, the exponent of which is 699.45. $\left(699.45 - 694.37\right)/694.37=0.0073$, or about a 0.73 percent increase.
 
 \subsubsection{Testing models with log likelihoods}
 \label{sec:likelihoodtest}

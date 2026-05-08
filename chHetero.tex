@@ -37,7 +37,7 @@ where $\sigma^2$ is the variance of the residuals. Mechanically, it just means t
 
 We do not actually know the true variance of the residuals, so we estimate the variance of the residuals with
 \begin{equation}
-\hat{\sigma}^2=\frac{\sum_{i=1}^N\hat{e}_i^2}{N-p}
+\hat{\sigma}^2=\frac{\sum_{i=1}^N\hat{e}_i^2}{N-p-1}
 \end{equation}
 and assume that it is constant for all predicted values, $\hat{y}_i$. When the variance of the residuals is not constant, then the formula for the variance of the slope is more complicated
 \begin{equation}
@@ -143,7 +143,7 @@ Thus, the square of the residual is a good choice. All robust standard errors do
 \label{sec:robustmatrix}
 Recall from \ref{sec:matrixv} that the variance of the slopes is expressed as
 \[
-\bf V\left({\hat{b}}\right)=\left(\frac{1}{N}X'X\right)^{-1}\sigma^2
+\bf V\left({\hat{b}}\right)=\sigma^2\left(X'X\right)^{-1}
 \]
 This expression also makes the assumption of constant variance. The expression is more complicated in its general form without this assumption
 \begin{equation}
@@ -173,7 +173,7 @@ When we multiply this matrix by the scalar such as $\sigma^2$, then the diagonal
 0&0&0&\sigma^2 \\
 \end{bmatrix}
 \]
-This all makes $\bf V\left(y\right)$ a very simple entity of the same scalar along the diagonals, allowing us to cancel out most of the $\bf X'X$s. This leaves us with $\bf \sigma^2\left(X'X\right)$ to express the variances of our slopes. However, when we have non-constant variances then we are no longer dealing with a single scalar. Instead, we theoretically have a variance for each case, $\sigma_i^2$. This makes
+This all makes $\bf V\left(y\right)$ a very simple entity of the same scalar along the diagonals, allowing us to cancel out most of the $\bf X'X$s. This leaves us with $\bf \sigma^2\left(X'X\right)^{-1}$ to express the variances of our slopes. However, when we have non-constant variances then we are no longer dealing with a single scalar. Instead, we theoretically have a variance for each case, $\sigma_i^2$. This makes
 \begin{equation}
 \bf V\left(y\right)=\mbox{diag}\left\{\sigma_1^2\ldots\sigma_N^2\right\}
 \end{equation}
@@ -234,11 +234,11 @@ The results of this model are presented as Model 3 in Table~\ref{tab:charityhet}
 
 We again return to matrix algebra to see how this generalizes to the least squares linear model. If we make the strong assumption that variances of the errors are proportional to another variable like $\sigma_i^2=\sigma^2/w_i^2$, then we know that the likelihood of the model is
 \begin{equation}
-L\left({\bf b},\sigma^2\right)=\frac{1}{\left(2\pi\right)^{\frac{N}{2}}}e^{\left(-\frac{1}{2}\bf{\left(y-Xb\right)'\Sigma^{-1}\left(y-Xb\right)}\right)}
+L\left({\bf b},\sigma^2\right)=\frac{1}{\left(2\pi\right)^{\frac{N}{2}}\left|\Sigma\right|^{\frac{1}{2}}}e^{\left(-\frac{1}{2}\bf{\left(y-Xb\right)'\Sigma^{-1}\left(y-Xb\right)}\right)}
 \end{equation}
 where
 \begin{equation}
-\Sigma = \sigma^2\times \mbox{diag}\left\{\frac{1}{a_i^2}\ldots\frac{1}{w_N^2}\right\}={\bf \sigma^2W^{-1}}
+\Sigma = \sigma^2\times \mbox{diag}\left\{\frac{1}{w_1^2}\ldots\frac{1}{w_N^2}\right\}={\bf \sigma^2W^{-1}}
 \end{equation}
 With this likelihood function we can get to the formula for the coefficients that maximizes the likelihood and minimizes the squares of the weighted errors, $\sum_{i=1}^N\left(w_ie_i\right)^2$
 \begin{equation}
@@ -246,7 +246,7 @@ With this likelihood function we can get to the formula for the coefficients tha
 \end{equation}
 where
 \begin{equation}
-{\bf W} = \mbox{diag}\left\{w_1\ldots w_N\right\}
+{\bf W} = \mbox{diag}\left\{w_1^2\ldots w_N^2\right\}
 \end{equation}
 Compare this the OLS estimator,~\eqref{eq:olsmatrix}
 \[
@@ -321,7 +321,7 @@ Doing this in a software package is relatively straightforward.
 \begin{enumerate}
 \item Estimate the naive variance of our residuals, which in practice is the square of the OLS residual
 \item Run a non-linear least squares model, where these squared residuals are function of the the exponent of a regression line that uses $\mbox{ln}\left(x\right)$ as a predictor
-\item Estimate the weights with the inverse of the linear prediction
+\item Estimate inverse-variance weights with the inverse of the predicted variance
 \item Re-estimate the model using these weights
 \end{enumerate}
 

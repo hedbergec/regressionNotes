@@ -181,7 +181,7 @@ Figures with extraordinary values of $x$ and $y$ are displayed in Figures~\ref{f
 
 The Cook's distance measure combines the leverage values with standardized residuals
 \begin{equation}
-D_i = \frac{e^{\left(standardized\right)}_i}{k+1}\times\frac{h_i}{1-h_i}
+D_i = \frac{\left(e^{\left(standardized\right)}_i\right)^2}{k+1}\times\frac{h_i}{1-h_i}
 \end{equation}
 
 
@@ -209,7 +209,7 @@ Figures with extraordinary values of $x$ and $y$ are displayed in Figures~\ref{f
 Similar to Cook's distance is the DFITS measure.
 
 \begin{equation}
-D_i = e_i\times \sqrt{\frac{h_i}{1-h_i}}
+D_i = e^{\left(studentized\right)}_i\times \sqrt{\frac{h_i}{1-h_i}}
 \end{equation}
 
 Figures with extraordinary values of $x$ and $y$ are displayed in Figures~\ref{fig:xdfit} and ~\ref{fig:ydfit}, respectively.

@@ -73,7 +73,7 @@ This is represented in Model 3 in Table~\ref{tab:prepostreg}, which reflects the
 
 Comparing Models 2 and 3 in Table~\ref{tab:prepostreg} you will notice that the standard errors for the intercept are different. To understand why, we need to remember where the standard error of intercepts comes from. The intercept is a predicted value (when $x$ is 0), and so like any other predicted value, the variance of the predicted value is equation~\eqref{eq:varfit}
 \[
-\mbox{var}\left(\hat{y}_0\right)=\left(\frac{\sigma^2}{N}+\frac{\left(x_0-\bar{x}\right)^2\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2}\right)\sigma^2
+\mbox{var}\left(\hat{y}_0\right)=\frac{\sigma^2}{N}+\frac{\left(x_0-\bar{x}\right)^2\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2}
 \]
 and the standard error is
 \begin{equation}
@@ -233,4 +233,4 @@ Sum of Squares Error     &  31091.550  &  29660.582  &  31091.549  &  29660.582 
 \end{table}
 
 \section*{For more information}
-For treatment of analysis of covariance and pre/post designs, see \citep{agresti} and \citep{cameron2005microeconometrics}. For discussion of causal inference in quasi-experimental designs and the relationship to ANCOVA, consult \citep{qed}. Lord's paradox and related challenges in covariate adjustment are discussed in detail in \citep{lord67} and \citep{lord69}. 
+For treatment of analysis of covariance and pre/post designs, see \citep{agresti} and \citep{cameron2005microeconometrics}. For discussion of causal inference in quasi-experimental designs and the relationship to ANCOVA, consult \citep{qed}. Lord's paradox and related challenges in covariate adjustment are discussed in detail in \citep{lord67} and \citep{lord69}.

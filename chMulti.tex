@@ -30,13 +30,13 @@ MSB=\frac{\sum_{j=1}^kn_j\left(\bar{y}_j-\bar{y}\right)^2}{k-1}
 \end{equation}
 The denominator of the ratio is the mean square within, which is the sum of squares within divided by the number of cases minus k group means
 \begin{equation}
-MSW=\frac{\sum_{j=1}^k\sum_{i=1}^{n_j}\left(y_{ij}-\bar{y_{ij}}\right)^2}{N-k}
+MSW=\frac{\sum_{j=1}^k\sum_{i=1}^{n_j}\left(y_{ij}-\bar{y}_j\right)^2}{N-k}
 \end{equation}
 The ratio then looks like this
 \begin{equation}
 F=\frac{MSB}{MSW}
 \end{equation}
-and we test how much of the $F$-distribution (with $k$ and $N-k$ degrees of freedom) is left after this value for our Type I error rate of our test of the the null hypothesis that all group means are the same. In other words, our null hypothesis is that all the group means are the same:
+and we test how much of the $F$-distribution (with $k-1$ and $N-k$ degrees of freedom) is left after this value for our Type I error rate of our test of the the null hypothesis that all group means are the same. In other words, our null hypothesis is that all the group means are the same:
 \begin{equation}
 H_0:\mu_1=\mu_2 \ldots =\mu_k.
 \end{equation}

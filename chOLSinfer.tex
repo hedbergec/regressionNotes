@@ -47,11 +47,11 @@ Table~\ref{tab:wagereg_all} gives a lot information. First we get the slopes and
 \label{sec:matrixv}
 In statistics, we are obsessed with the variance of our estimators. The variance of an estimator is just the square of the standard error. Thus, once we know the variance of the estimator, we can just get the square root and use that for hypothesis testing. In matrix notation, the variance of the regression slopes is
 \begin{equation}
-\bf V\left({\hat{b}}\right)=\left(\frac{1}{N}X'X\right)^{-1}\sigma^2
+\bf V\left({\hat{b}}\right)=\sigma^2\left(X'X\right)^{-1}
 \end{equation}
 where $\sigma^2$ is the variance of the regression residuals, or
 \begin{equation}
-\sigma^2 = \frac{\sum_{i=1}^N\left(e_i-\bar{e}\right)^2}{N-p}
+\sigma^2 = \frac{\sum_{i=1}^N\left(e_i-\bar{e}\right)^2}{N-p-1}
 \end{equation}
 and $\bf X'X$ is the sum of squares of the matrix of predictors. We can express this with conventional algebra in the bivariate regression model as
 \begin{equation}\label{eq:olsb1var}
@@ -64,11 +64,11 @@ SE\left(\beta_1\right)=\sqrt{\frac{\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right
 Here we see that the variance, and thus the standard error, is a function of the variance in the residuals and the variance in the predictor. It's the variance in the predictor that is the big player here. The larger the variance in $x$, or the more $x$ is "spread out," the smaller the standard error.
 This is related to this is the variance of predicted point, $\hat{y}_0$, where again the crucial ingredient is the variance of $x$
 \begin{equation}\label{eq:varfit}
-\mbox{var}\left(\hat{y}_0\right)=\left(\frac{\sigma^2}{N}+\frac{\left(x_0-\bar{x}\right)^2\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2}\right)\sigma^2
+\mbox{var}\left(\hat{y}_0\right)=\frac{\sigma^2}{N}+\frac{\left(x_0-\bar{x}\right)^2\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2}
 \end{equation}
 Here, $\hat{y}_0$ is the predicted value of $y$ associated with a hypothetical value of $x$, $x_0$. We see that as the hypothetical value of $x$ moves away from the mean of $x$, that the variance will increase.  This formula allows us to construct a confidence interval for each prediction
 \begin{equation}
-CI\left(\hat{y}_0,\left(1-\alpha\right)\times100\right)=\hat{y}_0\pm t_{df,\alpha/2}\sqrt{\left(\frac{\sigma^2}{N}+\frac{\left(x_0-\bar{x}\right)^2\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2}\right)\sigma^2}
+CI\left(\hat{y}_0,\left(1-\alpha\right)\times100\right)=\hat{y}_0\pm t_{df,\alpha/2}\sqrt{\frac{\sigma^2}{N}+\frac{\left(x_0-\bar{x}\right)^2\sigma^2}{\sum_{i=1}^N\left(x_i-\bar{x}\right)^2}}
 \end{equation}
 Thus, the greater the variance in $x$, the smaller the confidence interval in any predicted value of $y$. A smaller confidence interval means that the range of possible slopes for $y$ is smaller.
 \begin{figure}
@@ -193,21 +193,21 @@ R_{adjusted}^2=1-\left(\left(1-R^2\right)\frac{N-1}{N-p-1}\right)
 \end{equation}
 where $p$ is the number of predictors.
 \section{Testing blocks of coefficients}
-The $t$-tests of coefficients test each coefficient individually. This test is a test of whether that parameter is equal to 0. Another way to think of it is that it is a test of whether that variable adds to the explanatory power of the model compared to a model without that variable. This test compares the sum of squares error in the full model (or {\it unrestricted}) to the sum of squares error in the {\it restricted} model. For a single variable, this ratio is an F-test with ($1,N-p_U-1$) degrees of freedom, for more than 1 variable, the degrees of freedom are ($J_R,N-p_U-1$), where $J_R$ is the number of variables being tested and $p_U$ is the number of predictors (including the intercept) in the full model. The test is
+The $t$-tests of coefficients test each coefficient individually. This test is a test of whether that parameter is equal to 0. Another way to think of it is that it is a test of whether that variable adds to the explanatory power of the model compared to a model without that variable. This test compares the sum of squares error in the full model (or {\it unrestricted}) to the sum of squares error in the {\it restricted} model. For a single variable, this ratio is an F-test with ($1,N-p_U-1$) degrees of freedom, for more than 1 variable, the degrees of freedom are ($J_R,N-p_U-1$), where $J_R$ is the number of variables being tested and $p_U$ is the number of predictors, excluding the intercept, in the full model. The test is
 \begin{equation}
 F=\frac{\left(\frac{SSE_R-SSE_U}{J_R}\right)}{\left(\frac{SSE_U}{N-p_U-1}\right)}
 \end{equation}
-For example, Model 2 in Table~\ref{tab:wagereg_all} adds age as a predictor. The $t$-test indicates it is a significant predictor according to the three stars ($***$), but we can also find out with an $F$ test. Looking at the model statistics, we can call Model 1 the restricted model, so $SSE_R$ is 12606.570, and Model 2 the unrestricted model, so $SSR_U$ is 11175.277. Since the model adds a single variable, $J_R = 1$, and $N-3-1 = 200-2-1 = 196$. Thus, our test is
+For example, Model 2 in Table~\ref{tab:wagereg_all} adds age as a predictor. The $t$-test indicates it is a significant predictor according to the three stars ($***$), but we can also find out with an $F$ test. Looking at the model statistics, we can call Model 1 the restricted model, so $SSE_R$ is 12606.570, and Model 2 the unrestricted model, so $SSE_U$ is 11175.277. Since the model adds a single variable, $J_R = 1$, and $N-p_U-1 = 200-2-1 = 197$. Thus, our test is
 \[
-F=\frac{\left(\frac{12606.570-11175.277}{1}\right)}{\left(\frac{11175.277}{196}\right)}
+F=\frac{\left(\frac{12606.570-11175.277}{1}\right)}{\left(\frac{11175.277}{197}\right)}
 \]
 \[
-F=\frac{1431.293}{57.017}
+F=\frac{1431.293}{56.727}
 \]
 \[
-F=25.103
+F=25.229
 \]
-With ($1,196$) degrees of freedom, the probability of observing this test is 0.00001, which is very significant. We can check our work by estimating the $t$-test on the age effect:
+With ($1,197$) degrees of freedom, the probability of observing this test is 0.00001, which is very significant. We can check our work by estimating the $t$-test on the age effect:
 \[
 t=\frac{0.218}{0.043}
 \]

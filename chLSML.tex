@@ -103,15 +103,15 @@ Each time we use maximum likelihood, we much work our parameter estimator assumi
 
 If we are dealing with a normally distributed variable, we can start with the probably of observing the $i^{th}$ value
 \begin{equation}
-\mbox{Pr}\left(x_i\right)=\frac{1}{\sigma\sqrt{2\pi}}\exp\left[-\frac{1}{2}\sigma^2\left(x_i-\mu\right)^2\right],
+\mbox{Pr}\left(x_i\right)=\frac{1}{\sigma\sqrt{2\pi}}\exp\left[-\frac{\left(x_i-\mu\right)^2}{2\sigma^2}\right],
 \end{equation}
 and then the probability of observing a set of $x$s is then
 \begin{equation}
-\mbox{Pr}\left(x_i\ldots x_N\right)=\prod_{i=1}^N\frac{1}{\sigma\sqrt{2\pi}}\exp\left[-\frac{1}{2}\sigma^2\left(x_i-\mu\right)^2\right],
+\mbox{Pr}\left(x_i\ldots x_N\right)=\prod_{i=1}^N\frac{1}{\sigma\sqrt{2\pi}}\exp\left[-\frac{\left(x_i-\mu\right)^2}{2\sigma^2}\right],
 \end{equation}
 or
 \begin{equation}
-\mbox{Pr}\left(x_i\ldots x_N\right)=\left(\frac{1}{\sigma\sqrt{2\pi}}\right)^N\exp\left[-\frac{1}{2}\sigma^2\sum_{i=1}^N\left(x_i-\mu\right)^2\right],
+\mbox{Pr}\left(x_i\ldots x_N\right)=\left(\frac{1}{\sigma\sqrt{2\pi}}\right)^N\exp\left[-\frac{1}{2\sigma^2}\sum_{i=1}^N\left(x_i-\mu\right)^2\right],
 \end{equation}
 we can make the formula easier if we assume that $\sigma= 1$. If we consider the probability of several {\it independent} observations, this likelihood formula becomes a function of the mean
 \begin{equation}
@@ -119,7 +119,7 @@ we can make the formula easier if we assume that $\sigma= 1$. If we consider the
 \end{equation}
 We can take the log of this function to make it more tractable
 \begin{equation}
-\mbox{ln}\left(L\left(\mu\vert x_1\ldots x_N\right)\right)=-\frac{1}{2}\sum_{i=1}^N\left(x_i-\mu\right)^2-\frac{N}{2}\left(\mbox{ln}\left(\sqrt{2\pi}\right)\right)
+\mbox{ln}\left(L\left(\mu\vert x_1\ldots x_N\right)\right)=-\frac{1}{2}\sum_{i=1}^N\left(x_i-\mu\right)^2-N\mbox{ln}\left(\sqrt{2\pi}\right)
 \end{equation}
 which is something we can handle with basic calculus. We just need to find the derivative of this function with respect to $\mu$. In this situation $\frac{N}{2}\left(\mbox{ln}\left(\sqrt{2\pi}\right)\right)$ is a constant that does not involve $\mu$, and the power rule brings the square (the 2) down as a multiplayer, and $\frac{1}{2}\times 2 = 1$, so the derivative is
 \[
@@ -213,4 +213,4 @@ The next step is to set the derivative of this function to 0 (remember, when the
 
 \section*{For more information}
 For comprehensive treatment of least squares and maximum likelihood methods, see \citep{eliason1993maximum}. For discussion of likelihood-based inference in regression models, consult \citep{fox} and \citep{gill2006essential}. Additional perspectives on numerical optimization and parameter estimation can be found in \citep{cameron2005microeconometrics}.
-There we are, the formula that maximizes the likelihood is the mean, or proportion of 1s. In this case $p = 0.27$. It would be a simple matter to plug in the numbers (if they had been provided) to verify that $p = 0.27$. 
+There we are, the formula that maximizes the likelihood is the mean, or proportion of 1s. In this case $p = 0.27$. It would be a simple matter to plug in the numbers (if they had been provided) to verify that $p = 0.27$.

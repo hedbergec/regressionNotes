@@ -132,16 +132,16 @@ and
 \]
 then the likelihood is
 \begin{equation}
-L\left(p_i \vert y_1 \ldots y_N\right)=\prod_{i=1}^N e^{y_i\beta_0+\beta_1x_i}\left(1+e^{\beta_0+\beta_1x_i}\right)^{-1}
+L\left(p_i \vert y_1 \ldots y_N\right)=\prod_{i=1}^N e^{y_i\left(\beta_0+\beta_1x_i\right)}\left(1+e^{\beta_0+\beta_1x_i}\right)^{-1}
 \end{equation}
 and the log likelihood is
 \begin{equation}
-\mbox{ln}\left(L\left(p_i \vert y_1 \ldots y_N\right)\right)=\sum_{i=1}^N y_i\left(\beta_0+\beta_1x_i\right)-\mbox{ln}\left(1+e^{\beta_0+\beta_1x_i}\right)
+\mbox{ln}\left(L\left(p_i \vert y_1 \ldots y_N\right)\right)=\sum_{i=1}^N \left[y_i\left(\beta_0+\beta_1x_i\right)-\mbox{ln}\left(1+e^{\beta_0+\beta_1x_i}\right)\right]
 \end{equation}
 
 Now that we have a likelihood function, we {\it should} be able to derive the estimators for the intercept and slope. Let's start with the intercept:
 \begin{equation}
-\frac{\partial\mbox{ln}\left(L\left(p_i \vert y_1 \ldots y_N\right)\right)}{\partial\beta_0}=\sum_{i=1}^Ny_i-\frac{e^{\beta_0+\beta_1x_i}}{1+e^{\beta_0+\beta_1x_i}}
+\frac{\partial\mbox{ln}\left(L\left(p_i \vert y_1 \ldots y_N\right)\right)}{\partial\beta_0}=\sum_{i=1}^N\left(y_i-\frac{e^{\beta_0+\beta_1x_i}}{1+e^{\beta_0+\beta_1x_i}}\right)
 \end{equation}
 set to zero and
 \begin{equation}
@@ -149,13 +149,13 @@ set to zero and
 \end{equation}
 the solution is the sum of $y$'s needs to be the sum of predicted probabilities. Now, for the slope
 \begin{equation}
-\frac{\partial\mbox{ln}\left(L\left(p_i \vert y_1 \ldots y_N\right)\right)}{\partial\beta_1}=\sum_{i=1}^Nx_iy_i-\frac{x_i}{1+e^{-\beta_0+\beta_1x_i}}
+\frac{\partial\mbox{ln}\left(L\left(p_i \vert y_1 \ldots y_N\right)\right)}{\partial\beta_1}=\sum_{i=1}^N\left(x_iy_i-\frac{x_i}{1+e^{-\left(\beta_0+\beta_1x_i\right)}}\right)
 \end{equation}
 set to zero and
 \begin{equation}
-\sum_{i=1}^Nx_iy_i=\sum_{i=1}^N\frac{x_i}{1+e^{-\beta_0+\beta_1x_i}}
+\sum_{i=1}^Nx_iy_i=\sum_{i=1}^N\frac{x_i}{1+e^{-\left(\beta_0+\beta_1x_i\right)}}
 \end{equation}
-No solution exists.
+No closed-form solution exists.
 
 \section{Introduction to maximum likelihood estimation}
 
@@ -445,7 +445,7 @@ which reduces to
 \end{equation}
 and for the slope
 \[
-\frac{\partial^2\mbox{ln}\left(L\right)}{\partial\beta_1^2} = -\sum_{i-1}^N\left(x_i^2\left(\frac{e^{\beta_0+\beta_1x_i}}{1+e^{\beta_0+\beta_1x_i}}\right)\left(1-\frac{e^{\beta_0+\beta_1x_i}}{1+e^{\beta_0+\beta_1x_i}}\right)\right)
+\frac{\partial^2\mbox{ln}\left(L\right)}{\partial\beta_1^2} = -\sum_{i=1}^N\left(x_i^2\left(\frac{e^{\beta_0+\beta_1x_i}}{1+e^{\beta_0+\beta_1x_i}}\right)\left(1-\frac{e^{\beta_0+\beta_1x_i}}{1+e^{\beta_0+\beta_1x_i}}\right)\right)
 \]
 which reduces to
 \begin{equation}
