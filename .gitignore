@@ -1,0 +1,26 @@
+# LaTeX intermediate files
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.synctex.gz
+*.bbl
+
+# Backups
+*.bak
+
+# Figure and image artifacts
+*.eps
+*-eps-converted-to*.pdf
+*.png
+*.jpg
+*.jpeg
+*.gif
+*.svg
+*.tif
+*.tiff
